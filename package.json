@@ -1,0 +1,27 @@
+{
+  "name": "deluxe",
+  "version": "1.0.0",
+  "main": "index.js",
+  "scripts": {
+    "gulp": "gulp run"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {},
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Dabudidabuday/deluxe.git"
+  },
+  "bugs": {
+    "url": "https://github.com/Dabudidabuday/deluxe/issues"
+  },
+  "homepage": "https://github.com/Dabudidabuday/deluxe#readme",
+  "description": "",
+  "devDependencies": {
+    "browser-sync": "^2.26.7",
+    "del": "^5.1.0",
+    "gulp": "^4.0.2",
+    "gulp-concat": "^2.6.1",
+    "gulp-sass": "^4.0.2"
+  }
+}
