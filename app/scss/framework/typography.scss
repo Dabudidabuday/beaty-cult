@@ -1,0 +1,28 @@
+@font-face {
+  font-family: "Roboto", sans-serif;
+  src: url("./app/fonts/roboto/Roboto-Thin.ttf");
+  src: url("./app/fonts/roboto/Roboto-Light.ttf");
+  src: url("./app/fonts/roboto/Roboto-LightItalic.ttf");
+  src: url("./app/fonts/roboto/Roboto-Regular.ttf");
+  src: url("./app/fonts/roboto/Roboto-Medium.ttf");
+  src: url("./app/fonts/roboto/Roboto-Bold.ttf");
+
+}
+
+@font-face {
+  font-family: "Lora", sans-serif;
+  src: url("./app/fonts/lora/Lora-Bold.ttf");
+  src: url("./app/fonts/lora/Lora-Medium.ttf");
+  src: url("./app/fonts/lora/Lora-Regular.ttf");
+}
+
+
+.h1 {
+  font-family: "Lora", serif;
+  font-size: 1.625rem;
+  font-weight: bold;
+}
+
+.h3 {
+  font-weight: 300;
+}

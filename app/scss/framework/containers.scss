@@ -1,7 +1,7 @@
 .container {
   max-width: calc(#{$baseContainerWidth} - (#{$baseContainerPadding} * 2));
   width: 100%;
-  padding: 0 $baseContainerPadding;
+  //padding: 0 $baseContainerPadding;
   margin: 0 auto;
 }
 
@@ -44,14 +44,14 @@
 }
 
 // ----- Align-items
-@each $type in (center, start, end, baseline, stretch) {
+@each $type in (center, flex-start, flex-end, baseline, stretch) {
   .ai-#{$type} {
     align-items: $type;
   }
 }
 
 // ----- Justify-content
-@each $type in (center, between, around, start, end, left, right) {
+@each $type in (center, space-between, space-around, flex-start, flex-end, left, right) {
   .jc-#{$type} {
     justify-content: $type;
   }

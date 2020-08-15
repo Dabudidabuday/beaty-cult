@@ -1,0 +1,27 @@
+.atmo-title {
+  margin-bottom: 56px;
+}
+
+
+/* carousel height */
+.atmo-carousel,
+.teachers-carousel {
+  height: 288px;
+}
+
+/* cell inherit height from carousel */
+
+
+.atmo-slide,
+.teachers-slide {
+  width: 100%; /* full width */
+  height: 100%; /* height of carousel */
+  margin-right: 10px;
+
+  img {
+    background-size: cover;
+    width: 100%;
+    height: 100%;
+  }
+}
+

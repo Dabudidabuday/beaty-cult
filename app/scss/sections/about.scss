@@ -1,0 +1,39 @@
+.about-title {
+  margin-bottom: 14px;
+}
+
+.about-description {
+  margin-bottom: 56px;
+}
+
+
+.about__features-list {
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
+
+  .item {
+    margin-bottom: 42px;
+    display: grid;
+    place-items: center;
+    font-size: 14px;
+    text-align: center;
+
+    .item-img {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      margin-bottom: 9px;
+      width: 114px;
+      height: 114px;
+      border: 1px solid #DADADA;
+      border-radius: 50%;
+    }
+
+    .item-title {
+      max-width: 120px;
+      width: 100%;
+      line-height: 17px;
+    }
+  }
+}
