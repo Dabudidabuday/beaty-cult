@@ -3,29 +3,34 @@
   <component name="AutoImportSettings">
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
+  <component name="BranchesTreeState">
+    <expand>
+      <path>
+        <item name="ROOT" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="LOCAL_ROOT" type="e8cecc67:BranchNodeDescriptor" />
+      </path>
+      <path>
+        <item name="ROOT" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="REMOTE_ROOT" type="e8cecc67:BranchNodeDescriptor" />
+      </path>
+      <path>
+        <item name="ROOT" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="REMOTE_ROOT" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="GROUP_NODE:origin" type="e8cecc67:BranchNodeDescriptor" />
+      </path>
+    </expand>
+    <select />
+  </component>
   <component name="ChangeListManager">
     <list default="true" id="4e48a4bf-ce99-40a4-ba92-4a059b424bf1" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/app/scss/components/accordion.scss" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/scss/components/carousels.scss" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/scss/components/form.scss" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/js/carousels.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/scss/components/buttons.scss" beforeDir="false" afterPath="$PROJECT_DIR$/app/scss/components/buttons.scss" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/scss/components/index.scss" beforeDir="false" afterPath="$PROJECT_DIR$/app/scss/components/index.scss" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/scss/framework/index.scss" beforeDir="false" afterPath="$PROJECT_DIR$/app/scss/framework/index.scss" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/scss/framework/typography.scss" beforeDir="false" afterPath="$PROJECT_DIR$/app/scss/framework/typography.scss" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/scss/framework/utils.scss" beforeDir="false" afterPath="$PROJECT_DIR$/app/scss/framework/utils.scss" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/scss/framework/variables.scss" beforeDir="false" afterPath="$PROJECT_DIR$/app/scss/framework/variables.scss" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/scss/index.scss" beforeDir="false" afterPath="$PROJECT_DIR$/app/scss/index.scss" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/scss/sections/about.scss" beforeDir="false" afterPath="$PROJECT_DIR$/app/scss/sections/about.scss" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/scss/sections/atmo.scss" beforeDir="false" afterPath="$PROJECT_DIR$/app/scss/sections/atmo.scss" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/scss/sections/contacts.scss" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/js/main.js" beforeDir="false" afterPath="$PROJECT_DIR$/app/js/main.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/app/scss/sections/courses.scss" beforeDir="false" afterPath="$PROJECT_DIR$/app/scss/sections/courses.scss" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/scss/sections/feedback.scss" beforeDir="false" afterPath="$PROJECT_DIR$/app/scss/sections/feedback.scss" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/scss/sections/footer.scss" beforeDir="false" afterPath="$PROJECT_DIR$/app/scss/sections/footer.scss" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/app/scss/sections/header.scss" beforeDir="false" afterPath="$PROJECT_DIR$/app/scss/sections/header.scss" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/scss/sections/hero.scss" beforeDir="false" afterPath="$PROJECT_DIR$/app/scss/sections/hero.scss" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/scss/sections/teachers.scss" beforeDir="false" afterPath="$PROJECT_DIR$/app/scss/sections/teachers.scss" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/dist/main.css" beforeDir="false" afterPath="$PROJECT_DIR$/dist/main.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/dist/main.js" beforeDir="false" afterPath="$PROJECT_DIR$/dist/main.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/gulpfile.js" beforeDir="false" afterPath="$PROJECT_DIR$/gulpfile.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/index.html" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -119,6 +124,17 @@
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="3" />
   </component>
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State />
+          </value>
+        </entry>
+      </map>
+    </option>
+  </component>
   <component name="WindowStateProjectService">
     <state x="409" y="250" key="#com.intellij.fileTypes.FileTypeChooser" timestamp="1597401446709">
       <screen x="0" y="0" width="1440" height="900" />
@@ -128,22 +144,22 @@
       <screen x="0" y="0" width="1440" height="900" />
     </state>
     <state x="458" y="204" key="#com.intellij.refactoring.safeDelete.UnsafeUsagesDialog/0.0.1440.900@0.0.1440.900" timestamp="1597648504300" />
-    <state width="1398" height="240" key="GridCell.Tab.0.bottom" timestamp="1597638902130">
+    <state width="1398" height="240" key="GridCell.Tab.0.bottom" timestamp="1597654140122">
       <screen x="0" y="0" width="1440" height="900" />
     </state>
-    <state width="1398" height="240" key="GridCell.Tab.0.bottom/0.0.1440.900@0.0.1440.900" timestamp="1597638902130" />
-    <state width="1398" height="240" key="GridCell.Tab.0.center" timestamp="1597638902129">
+    <state width="1398" height="240" key="GridCell.Tab.0.bottom/0.0.1440.900@0.0.1440.900" timestamp="1597654140122" />
+    <state width="1398" height="240" key="GridCell.Tab.0.center" timestamp="1597654140121">
       <screen x="0" y="0" width="1440" height="900" />
     </state>
-    <state width="1398" height="240" key="GridCell.Tab.0.center/0.0.1440.900@0.0.1440.900" timestamp="1597638902129" />
-    <state width="1398" height="240" key="GridCell.Tab.0.left" timestamp="1597638902128">
+    <state width="1398" height="240" key="GridCell.Tab.0.center/0.0.1440.900@0.0.1440.900" timestamp="1597654140121" />
+    <state width="1398" height="240" key="GridCell.Tab.0.left" timestamp="1597654140120">
       <screen x="0" y="0" width="1440" height="900" />
     </state>
-    <state width="1398" height="240" key="GridCell.Tab.0.left/0.0.1440.900@0.0.1440.900" timestamp="1597638902128" />
-    <state width="1398" height="240" key="GridCell.Tab.0.right" timestamp="1597638902129">
+    <state width="1398" height="240" key="GridCell.Tab.0.left/0.0.1440.900@0.0.1440.900" timestamp="1597654140120" />
+    <state width="1398" height="240" key="GridCell.Tab.0.right" timestamp="1597654140121">
       <screen x="0" y="0" width="1440" height="900" />
     </state>
-    <state width="1398" height="240" key="GridCell.Tab.0.right/0.0.1440.900@0.0.1440.900" timestamp="1597638902129" />
+    <state width="1398" height="240" key="GridCell.Tab.0.right/0.0.1440.900@0.0.1440.900" timestamp="1597654140121" />
     <state x="221" y="89" key="SettingsEditor" timestamp="1597396930981">
       <screen x="0" y="0" width="1440" height="900" />
     </state>
@@ -152,9 +168,9 @@
       <screen x="0" y="0" width="1440" height="900" />
     </state>
     <state x="422" y="164" width="596" height="580" key="find.popup/0.0.1440.900@0.0.1440.900" timestamp="1597651254555" />
-    <state x="385" y="196" width="670" height="676" key="search.everywhere.popup" timestamp="1597648925960">
+    <state x="385" y="196" width="670" height="676" key="search.everywhere.popup" timestamp="1597653089640">
       <screen x="0" y="0" width="1440" height="900" />
     </state>
-    <state x="385" y="196" width="670" height="676" key="search.everywhere.popup/0.0.1440.900@0.0.1440.900" timestamp="1597648925960" />
+    <state x="385" y="196" width="670" height="676" key="search.everywhere.popup/0.0.1440.900@0.0.1440.900" timestamp="1597653089640" />
   </component>
 </project>
