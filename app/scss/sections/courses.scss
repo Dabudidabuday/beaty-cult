@@ -1,44 +1,7 @@
-.courses-title {
+.courses__title {
   margin-bottom: 3.5rem;
 }
 
-.item-inner {
-  position: relative;
-  padding-top: 11px;
-  padding-bottom: 11px;
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-}
-
-.separator::after {
-  position: absolute;
-  margin-left: -16px;
-  margin-right: -16px;
-  content: '';
-  width: 100%;
-  height: 1px;
-  background-color: #EFF6F4;
-}
 
 
-.courses__direction-list {
-  font-size: 14px;
-  list-style: square;
 
-  .item {
-    display: flex;
-    justify-content: space-between;
-    margin-bottom: 22px;
-    margin-left: 16px;
-  }
-
-  .item-link {
-    text-decoration: none;
-    color: $colorFontMain;
-  }
-
-  .item-data {
-    font-weight: bold;
-  }
-}

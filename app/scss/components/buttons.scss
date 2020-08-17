@@ -7,7 +7,7 @@
   color: $colorWhite;
   font-weight: 500;
   font-size: 16px;
-  background-color: #96BCB0;
+  background-color: $colorPrimary;
   border: none;
   border-radius: 2px;
 }
@@ -27,8 +27,8 @@
   height: 34px;
   font-size: 20px;
   font-weight: 300;
-  color: #8B8B8B;
-  background-color: #EFF6F4;
-  border: 1px solid #EFF6F4;
+  color: $colorPrimary;
+  background-color: $colorAccent;
+  border: 1px solid $colorGrey;
   border-radius: 50%;
 }

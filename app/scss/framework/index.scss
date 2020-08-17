@@ -7,13 +7,11 @@
 @import 'utils.scss';
 @import 'containers.scss';
 
-
-
 body {
   font-family: 'Roboto', sans-serif;
   color: $colorFontMain;
+  letter-spacing: -0.47px;
 }
-
 
 .section {
   padding: 90px 0;

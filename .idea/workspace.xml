@@ -5,20 +5,27 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="4e48a4bf-ce99-40a4-ba92-4a059b424bf1" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/app/scss/sections/atmo.scss" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/scss/sections/contacts.scss" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/scss/sections/feedback.scss" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/scss/sections/teachers.scss" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/scss/components/accordion.scss" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/scss/components/carousels.scss" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/scss/components/form.scss" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/js/main.js" beforeDir="false" afterPath="$PROJECT_DIR$/app/js/main.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/app/scss/components/buttons.scss" beforeDir="false" afterPath="$PROJECT_DIR$/app/scss/components/buttons.scss" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/scss/framework/containers.scss" beforeDir="false" afterPath="$PROJECT_DIR$/app/scss/framework/containers.scss" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/scss/components/index.scss" beforeDir="false" afterPath="$PROJECT_DIR$/app/scss/components/index.scss" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/app/scss/framework/index.scss" beforeDir="false" afterPath="$PROJECT_DIR$/app/scss/framework/index.scss" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/scss/framework/typography.scss" beforeDir="false" afterPath="$PROJECT_DIR$/app/scss/framework/typography.scss" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/scss/framework/utils.scss" beforeDir="false" afterPath="$PROJECT_DIR$/app/scss/framework/utils.scss" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/app/scss/framework/variables.scss" beforeDir="false" afterPath="$PROJECT_DIR$/app/scss/framework/variables.scss" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/app/scss/index.scss" beforeDir="false" afterPath="$PROJECT_DIR$/app/scss/index.scss" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/scss/sections/about.scss" beforeDir="false" afterPath="$PROJECT_DIR$/app/scss/sections/about.scss" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/scss/sections/atmo.scss" beforeDir="false" afterPath="$PROJECT_DIR$/app/scss/sections/atmo.scss" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/scss/sections/contacts.scss" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/scss/sections/courses.scss" beforeDir="false" afterPath="$PROJECT_DIR$/app/scss/sections/courses.scss" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/scss/sections/feedback.scss" beforeDir="false" afterPath="$PROJECT_DIR$/app/scss/sections/feedback.scss" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/scss/sections/footer.scss" beforeDir="false" afterPath="$PROJECT_DIR$/app/scss/sections/footer.scss" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/app/scss/sections/header.scss" beforeDir="false" afterPath="$PROJECT_DIR$/app/scss/sections/header.scss" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/scss/sections/hero.scss" beforeDir="false" afterPath="$PROJECT_DIR$/app/scss/sections/hero.scss" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/scss/sections/teachers.scss" beforeDir="false" afterPath="$PROJECT_DIR$/app/scss/sections/teachers.scss" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/dist/main.css" beforeDir="false" afterPath="$PROJECT_DIR$/dist/main.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/dist/main.js" beforeDir="false" afterPath="$PROJECT_DIR$/dist/main.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/index.html" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -57,12 +64,23 @@
       <recent name="$PROJECT_DIR$/app/assets/images" />
     </key>
   </component>
-  <component name="RunManager">
+  <component name="RunManager" selected="npm.gulp">
     <configuration default="true" type="js.build_tools.gulp">
       <node-interpreter>project</node-interpreter>
       <node-options />
       <gulpfile />
       <tasks />
+      <arguments />
+      <envs />
+      <method v="2" />
+    </configuration>
+    <configuration name="run" type="js.build_tools.gulp" temporary="true">
+      <node-interpreter>project</node-interpreter>
+      <node-options />
+      <gulpfile>$PROJECT_DIR$/gulpfile.js</gulpfile>
+      <tasks>
+        <task>run</task>
+      </tasks>
       <arguments />
       <envs />
       <method v="2" />
@@ -79,6 +97,7 @@
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="Gulp.js.run" />
         <item itemvalue="npm.gulp" />
       </list>
     </recent_temporary>
@@ -92,7 +111,8 @@
       <option name="presentableId" value="Default" />
       <updated>1597386340213</updated>
       <workItem from="1597386341508" duration="10995000" />
-      <workItem from="1597465019370" duration="4498000" />
+      <workItem from="1597465019370" duration="4629000" />
+      <workItem from="1597486416746" duration="7004000" />
     </task>
     <servers />
   </component>
@@ -104,33 +124,37 @@
       <screen x="0" y="0" width="1440" height="900" />
     </state>
     <state x="409" y="250" key="#com.intellij.fileTypes.FileTypeChooser/0.0.1440.900@0.0.1440.900" timestamp="1597401446709" />
-    <state width="1398" height="240" key="GridCell.Tab.0.bottom" timestamp="1597465048636">
+    <state x="458" y="204" key="#com.intellij.refactoring.safeDelete.UnsafeUsagesDialog" timestamp="1597648504300">
       <screen x="0" y="0" width="1440" height="900" />
     </state>
-    <state width="1398" height="240" key="GridCell.Tab.0.bottom/0.0.1440.900@0.0.1440.900" timestamp="1597465048636" />
-    <state width="1398" height="240" key="GridCell.Tab.0.center" timestamp="1597465048634">
+    <state x="458" y="204" key="#com.intellij.refactoring.safeDelete.UnsafeUsagesDialog/0.0.1440.900@0.0.1440.900" timestamp="1597648504300" />
+    <state width="1398" height="240" key="GridCell.Tab.0.bottom" timestamp="1597638902130">
       <screen x="0" y="0" width="1440" height="900" />
     </state>
-    <state width="1398" height="240" key="GridCell.Tab.0.center/0.0.1440.900@0.0.1440.900" timestamp="1597465048634" />
-    <state width="1398" height="240" key="GridCell.Tab.0.left" timestamp="1597465048633">
+    <state width="1398" height="240" key="GridCell.Tab.0.bottom/0.0.1440.900@0.0.1440.900" timestamp="1597638902130" />
+    <state width="1398" height="240" key="GridCell.Tab.0.center" timestamp="1597638902129">
       <screen x="0" y="0" width="1440" height="900" />
     </state>
-    <state width="1398" height="240" key="GridCell.Tab.0.left/0.0.1440.900@0.0.1440.900" timestamp="1597465048633" />
-    <state width="1398" height="240" key="GridCell.Tab.0.right" timestamp="1597465048634">
+    <state width="1398" height="240" key="GridCell.Tab.0.center/0.0.1440.900@0.0.1440.900" timestamp="1597638902129" />
+    <state width="1398" height="240" key="GridCell.Tab.0.left" timestamp="1597638902128">
       <screen x="0" y="0" width="1440" height="900" />
     </state>
-    <state width="1398" height="240" key="GridCell.Tab.0.right/0.0.1440.900@0.0.1440.900" timestamp="1597465048634" />
+    <state width="1398" height="240" key="GridCell.Tab.0.left/0.0.1440.900@0.0.1440.900" timestamp="1597638902128" />
+    <state width="1398" height="240" key="GridCell.Tab.0.right" timestamp="1597638902129">
+      <screen x="0" y="0" width="1440" height="900" />
+    </state>
+    <state width="1398" height="240" key="GridCell.Tab.0.right/0.0.1440.900@0.0.1440.900" timestamp="1597638902129" />
     <state x="221" y="89" key="SettingsEditor" timestamp="1597396930981">
       <screen x="0" y="0" width="1440" height="900" />
     </state>
     <state x="221" y="89" key="SettingsEditor/0.0.1440.900@0.0.1440.900" timestamp="1597396930981" />
-    <state x="422" y="163" width="596" height="580" key="find.popup" timestamp="1597464651499">
+    <state x="422" y="164" width="596" height="580" key="find.popup" timestamp="1597651254555">
       <screen x="0" y="0" width="1440" height="900" />
     </state>
-    <state x="422" y="163" width="596" height="580" key="find.popup/0.0.1440.900@0.0.1440.900" timestamp="1597464651499" />
-    <state x="385" y="196" width="670" height="676" key="search.everywhere.popup" timestamp="1597470871214">
+    <state x="422" y="164" width="596" height="580" key="find.popup/0.0.1440.900@0.0.1440.900" timestamp="1597651254555" />
+    <state x="385" y="196" width="670" height="676" key="search.everywhere.popup" timestamp="1597648925960">
       <screen x="0" y="0" width="1440" height="900" />
     </state>
-    <state x="385" y="196" width="670" height="676" key="search.everywhere.popup/0.0.1440.900@0.0.1440.900" timestamp="1597470871214" />
+    <state x="385" y="196" width="670" height="676" key="search.everywhere.popup/0.0.1440.900@0.0.1440.900" timestamp="1597648925960" />
   </component>
 </project>

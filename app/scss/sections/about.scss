@@ -1,33 +1,34 @@
-.about-title {
-  margin-bottom: 14px;
-}
-
 .about-description {
-  margin-bottom: 56px;
+  margin-bottom: 3.5rem;
 }
 
-
-.about__features-list {
+.features-list {
+  padding: 0 1.375rem;
   display: flex;
-  justify-content: space-around;
+  justify-content: space-between;
   flex-wrap: wrap;
 
   .item {
-    margin-bottom: 42px;
+    margin-bottom: 2.75rem;
     display: grid;
     place-items: center;
-    font-size: 14px;
+    font-size: 0.875rem;
     text-align: center;
 
     .item-img {
+      @include size(114px, 114px);
       display: flex;
       justify-content: center;
       align-items: center;
       margin-bottom: 9px;
-      width: 114px;
-      height: 114px;
-      border: 1px solid #DADADA;
+      border: 1px solid $colorGrey;
       border-radius: 50%;
+
+      img {
+        @include size(35px, 35px);
+        background-color: $colorGrey;
+        opacity: 0.3;
+      }
     }
 
     .item-title {

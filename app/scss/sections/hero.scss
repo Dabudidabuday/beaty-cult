@@ -8,21 +8,14 @@
   background-size: cover;
 }
 
-
-
-
-.hero-title,
-.hero-suptitle {
+.hero__title,
+.hero__suptitle {
   color: $colorWhite;
 }
 
-.hero-suptitle {
-  margin-bottom: 16px;
+.hero__suptitle {
+  margin-bottom: 1rem;
 }
 
-.hero-title {
-  margin-bottom: 25px;
-  font-family: "Lora", serif;
-}
 
 

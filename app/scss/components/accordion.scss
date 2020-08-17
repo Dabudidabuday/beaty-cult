@@ -1,0 +1,37 @@
+.accordion {
+
+  .accordion__outer-list {
+    @include flexContainer(row);
+    justify-content: space-between;
+    align-items: center;
+
+    position: relative;
+    padding: 0.75rem 0;
+
+    .item__title {
+      font-family: "Lora", serif;
+      color: $colorPrimary;
+    }
+  }
+
+  .accordion__inner-list {
+    margin: 1rem 0;
+    font-size: 0.875rem;
+
+    .item {
+      margin-left: 1rem;
+      padding: 0.625rem 0;
+      display: flex;
+      justify-content: space-between;
+    }
+
+    .item-link {
+      text-decoration: none;
+      color: $colorFontMain;
+    }
+
+    .item-data {
+      font-weight: bold;
+    }
+  }
+}
