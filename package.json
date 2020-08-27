@@ -1,27 +1,26 @@
 {
-  "name": "deluxe",
+  "name": "webpack",
   "version": "1.0.0",
   "main": "index.js",
+  "repository": "https://github.com/Dabudidabuday/beaty-cult.git",
+  "author": "Myroslav <94mir.ms@gmail.com>",
+  "license": "MIT",
   "scripts": {
-    "gulp": "gulp run"
+    "start": "webpack-dev-server --history-api-fallback --inline --progress"
   },
-  "author": "",
-  "license": "ISC",
-  "dependencies": {},
-  "repository": {
-    "type": "git",
-    "url": "git+https://github.com/Dabudidabuday/deluxe.git"
-  },
-  "bugs": {
-    "url": "https://github.com/Dabudidabuday/deluxe/issues"
-  },
-  "homepage": "https://github.com/Dabudidabuday/deluxe#readme",
-  "description": "",
   "devDependencies": {
-    "browser-sync": "^2.26.7",
-    "del": "^5.1.0",
-    "gulp": "^4.0.2",
-    "gulp-concat": "^2.6.1",
-    "gulp-sass": "^4.0.2"
+    "babel-core": "^6.26.3",
+    "babel-loader": "7",
+    "babel-preset-env": "^1.7.0",
+    "css-loader": "^4.2.1",
+    "file-loader": "^6.0.0",
+    "html-webpack-plugin": "^4.3.0",
+    "node-sass": "^4.14.1",
+    "sass-loader": "^9.0.3",
+    "style-loader": "^1.2.1",
+    "swiper": "^6.1.2",
+    "webpack": "^4.44.1",
+    "webpack-cli": "^3.3.12",
+    "webpack-dev-server": "^3.11.0"
   }
 }

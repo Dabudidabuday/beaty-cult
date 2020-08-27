@@ -1,0 +1,75 @@
+.courses__card {
+  display: none;  // изначально на телефоне инфо блок о курсах скрыты
+}
+
+.section.courses {
+  padding-top: 0;  // убрали заданнный отступ секции
+}
+
+.accordion {
+  margin-top: 56px;  // добавили отступ секции через аккордеон, потому что карточка должжа быть прижата к верху секции
+}
+
+@media screen and(min-width: $mediumScreen) {
+  .courses-container {
+    display: flex;
+    justify-content: space-between;
+
+    .courses__card {
+      display: block;  // показываем инфо карточку о курсах
+      flex-basis: 50%;
+      border-left: 1px solid #E7E8EA;
+
+      .card__description {
+        padding-left: 2.5rem;
+        padding-bottom: 2.5rem;
+      }
+
+      .card-text {
+        margin-top: 4.8rem;
+        margin-bottom: 1.875rem;
+        font-size: $baseFontSizeAsRem;
+      }
+
+      .card__info {
+        margin-bottom: 2.5rem;
+        display: flex;
+        justify-content: space-between;
+
+        .card__info-bullet {
+          display: flex;
+          align-items: center;
+
+          .bullet-icon {
+            margin-right: 0.5rem;
+            width: 2rem;
+            height: 2rem;
+            background-color: $colorGrey;
+          }
+        }
+      }
+    }
+
+    .accordion {
+      .item {
+        .accordion__outer-list {
+          justify-content: flex-end;
+        }
+      }
+
+      .item-data {
+        display: none;
+      }
+
+      .separator::after {
+        left: -9999px;
+      }
+    }
+  }
+
+
+
+
+
+
+}

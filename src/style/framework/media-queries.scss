@@ -1,0 +1,40 @@
+@media screen and (min-width: $extraSmallScreen) and (max-width: $smallScreen) {
+  html,
+  body {
+    font-size: $baseFontSize;
+  }
+}
+
+@media screen and (min-width: $smallScreen) and (max-width: $mediumScreen) {
+  html,
+  body {
+    font-size: $baseFontSize * 2;
+  }
+}
+
+@media screen and (min-width: $mediumScreen) and (max-width: $largeScreen) {
+  html,
+  body {
+    font-size: $baseFontSize / 1.3;
+  }
+
+  .container {
+    padding: 0 76px;
+    //max-width: $mediumScreen;
+    width: 100%;
+    //margin: 0 auto;
+  }
+}
+//
+//@media screen and (min-width: $largeScreen) {
+//  html,
+//  body {
+//    font-size: $baseFontSize;
+//  }
+//}
+//
+//@media screen and (min-width: $mediumScreen) {
+//  .app-section {
+//    margin: 45px auto;
+//  }
+//}

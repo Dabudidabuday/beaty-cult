@@ -1,0 +1,26 @@
+.header__menu {
+  //display: none;
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  height: 100vh;
+  background-color: #fff;
+  z-index: 20;
+}
+
+.menu-top {
+  position: relative;
+  height: 2.625rem;
+
+  .header-logo {
+
+    svg {
+      width: 100%;
+      height: 100%;
+    }
+  }
+
+
+}

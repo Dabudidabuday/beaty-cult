@@ -1,0 +1,87 @@
+.btn {
+  position: relative;
+  padding: 1rem 1.5rem;
+  display: inline-block;
+  border-radius: 2px;
+}
+
+.btn-primary {
+  color: $colorWhite;
+  font-weight: 500;
+  font-size: $baseFontSizeAsRem;
+  background-color: $colorPrimary;
+  border: none;
+}
+
+.btn-outline {
+  font-size: $baseFontSizeAsRem;
+  color: $colorFontMain;
+  background-color: transparent;
+  border: 1px solid $colorAccent;
+}
+
+.btn-close {
+  position: absolute;
+  padding: 1.4rem 3rem;
+  top: 0;
+  right: 0;
+  background-color: $colorAccent;
+
+  .btn-line {
+    transform: rotate(45deg);
+    left: calc(50% - 0.625rem);
+    width: $baseFontSizeAsRem * 1.5;
+  }
+
+  .btn-line--vertical {
+    transform: rotate(-45deg);
+  }
+}
+
+
+
+.btn-circle {
+  padding: 0;
+  width: $baseFontSizeAsRem * 2.125;
+  height: $baseFontSizeAsRem * 2.125;
+  color: $colorPrimary;
+  background-color: transparent;
+  border: 1px solid #EFF6F4;
+  border-radius: 50%;
+
+  &:focus {
+    outline: none;
+  }
+}
+
+.active {
+  background-color: $colorAccent;
+
+  .btn-line--vertical {
+    transform: rotate(180deg);
+    transition: ease-in .3s;
+  }
+}
+
+.btn-line {
+  position: absolute;
+  top: calc(50% - #{$baseFontSizeAsRem / 16});
+  left: 25%;
+  width: $baseFontSizeAsRem;
+  height: $baseFontSizeAsRem / 8;
+  border-radius: 4px;
+  background-color: $colorPrimary;
+}
+
+.btn-line--vertical {
+  transform: rotate(90deg);
+}
+
+// To Do специфичность правил кнопки в hero
+
+.hero {
+  .btn-outline {
+    color: $colorWhite;
+    border: 1px solid $colorWhite;
+  }
+}

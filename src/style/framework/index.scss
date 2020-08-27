@@ -1,0 +1,19 @@
+@import 'normalize.scss';
+@import 'variables.scss';
+@import 'typography.scss';
+
+@import 'mixins.scss';
+@import 'utils.scss';
+@import 'containers.scss';
+@import "media-queries.scss";
+
+body {
+  font-family: 'Roboto', sans-serif;
+  font-size: $baseFontSize;
+  color: $colorFontMain;
+  letter-spacing: -0.47px;
+}
+
+.section {
+  padding: 56px 0;
+}

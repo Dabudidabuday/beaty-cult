@@ -1,0 +1,73 @@
+.accordion {
+  flex-basis: 50%;
+
+  .accordion__outer-list {
+    @include flexContainer(row);
+    justify-content: space-between;
+    align-items: center;
+
+    position: relative;
+    padding: 0.75rem 0;
+
+    .item__title {
+      font-family: "Lora", serif;
+      color: $colorPrimary;
+      font-size: $baseFontSizeAsRem;
+    }
+
+
+  }
+
+  @media screen and(min-width: $mediumScreen) {
+    .item {
+      margin-right: $baseFontSizeAsRem;
+      display: inline-block;
+    }
+
+    .accordion__outer-list {
+      flex-direction: row-reverse;
+    }
+
+
+    .item__title {
+      margin-left: 8px;
+    }
+  }
+
+  .accordion__inner-list {
+    margin: 1rem 0;
+    font-size: 0.875rem;
+    transition: all .4s;
+    .item {
+      position: relative;
+      margin-left: 1rem;
+      padding: 0.625rem 0;
+      display: flex;
+      justify-content: space-between;
+      font-size: $baseFontSizeAsRem * 0.8;
+
+      &::before {
+        content: '';
+        position: absolute;
+        top: 50%;
+        left: -$baseFontSizeAsRem * 0.8;
+        width: $baseFontSizeAsRem / 2;
+        height: $baseFontSizeAsRem / 16;
+        background-color: $colorFontMain;
+      }
+    }
+
+    .item-link {
+      text-decoration: none;
+      color: $colorFontMain;
+    }
+
+    .item-data {
+      font-weight: bold;
+    }
+
+    @media screen and(min-width: $mediumScreen) {
+      margin-left: 3rem;
+    }
+  }
+}
