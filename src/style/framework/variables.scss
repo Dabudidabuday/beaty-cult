@@ -1,5 +1,6 @@
 // ----- screens
-$largeScreen: 1920px;
+//$largeScreen: 1920px;
+$largeScreen: 1440px;
 $mediumScreen: 1024px;
 $smallScreen: 768px;
 $extraSmallScreen: 360px;
@@ -8,15 +9,15 @@ $extraSmallScreen: 360px;
 $baseContainerPadding: 1rem;
 
 // ----- fonts
-$mainFont: 'Arial';
+$mainFont: 'Roboto', sans-serif;
 $baseFontSize: 16px;
 $baseFontSizeAsRem: 1rem;
 
 
 // ----- Main colors
-$colorFontMain: #1F1F1F;
-$colorPrimary: #96BCB0;
+$colorFontMain: #2F2F2F;
 
+$colorPrimary: #A8CEC2;
 $colorAccent: #EFF6F4;
 
 
@@ -24,6 +25,7 @@ $colorAccent: #EFF6F4;
 $colorWhite: #ffffff;
 $colorBlack: #000000;
 $colorGrey: #DADADA;
+$colorDarkGrey: #636E6B;
 
 
 

@@ -1,5 +1,4 @@
 .header__menu {
-  //display: none;
   position: absolute;
   top: 0;
   right: 0;
@@ -7,7 +6,7 @@
   left: 0;
   height: 100vh;
   background-color: #fff;
-  z-index: 20;
+  z-index: 10;
 }
 
 .menu-top {
@@ -21,6 +20,4 @@
       height: 100%;
     }
   }
-
-
 }

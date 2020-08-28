@@ -3,6 +3,7 @@ import './scripts/index.js';
 
 import AtmoSlider from "./scripts/sliders/atmo-slider";
 import TeacherSlider from "./scripts/sliders/teacher-slider";
+
 class App {
     constructor() {
         this.atmoSlider = new AtmoSlider(document.querySelector(".atmo"));

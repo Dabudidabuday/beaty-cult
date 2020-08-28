@@ -7,8 +7,12 @@
 @import 'containers.scss';
 @import "media-queries.scss";
 
+html {
+  scroll-behavior: smooth;
+}
+
 body {
-  font-family: 'Roboto', sans-serif;
+  font-family: $mainFont;
   font-size: $baseFontSize;
   color: $colorFontMain;
   letter-spacing: -0.47px;
@@ -16,4 +20,5 @@ body {
 
 .section {
   padding: 56px 0;
+  overflow: hidden;
 }

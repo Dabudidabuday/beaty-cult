@@ -29,7 +29,7 @@ module.exports = {
                 }]
             },
             {
-                test: /\.(png|svg|jpg|gif)$/,
+                test: /\.(png|svg|jpg|gif|ttf)$/,
                 use: [
                 'file-loader',
                 ],
@@ -49,8 +49,8 @@ module.exports = {
     resolve: {
         alias: {
             "@images": path.resolve(__dirname, 'src/public/assets/images'),
-            Templates: path.resolve(__dirname, 'src/templates/'),
-            "@plugins": path.resolve(__dirname, 'src/app/plugins')
+            "@plugins": path.resolve(__dirname, 'src/app/plugins'),
+            "@fonts": path.resolve(__dirname, 'src/public/assets/fonts'),
         }
     }
 };

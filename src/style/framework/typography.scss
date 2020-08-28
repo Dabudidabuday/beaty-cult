@@ -1,20 +1,20 @@
-//@font-face {
-//  font-family: "Roboto", sans-serif;
-//  src: url("../../public/fonts/roboto/Roboto-Thin.ttf");
-//  src: url("../../public/fonts/roboto/Roboto-Light.ttf");
-//  src: url("../../public/fonts/roboto/Roboto-LightItalic.ttf");
-//  src: url("../../public/fonts/roboto/Roboto-Regular.ttf");
-//  src: url("../../public/fonts/roboto/Roboto-Medium.ttf");
-//  src: url("../../public/fonts/roboto/Roboto-Bold.ttf");
-//
-//}
-//
-//@font-face {
-//  font-family: "Lora", sans-serif;
-//  src: url("../../public/fonts/lora/Lora-Bold.ttf");
-//  src: url("../../public/fonts/lora/Lora-Medium.ttf");
-//  src: url("../../public/fonts/lora/Lora-Regular.ttf");
-//}
+@font-face {
+  font-family: "Roboto", sans-serif;
+  src: url("@fonts/roboto/Roboto-Thin.ttf");
+  src: url("@fonts/roboto/Roboto-Light.ttf");
+  src: url("@fonts/roboto/Roboto-LightItalic.ttf");
+  src: url("@fonts/roboto/Roboto-Regular.ttf");
+  src: url("@fonts/roboto/Roboto-Medium.ttf");
+  src: url("@fonts/roboto/Roboto-Bold.ttf");
+
+}
+
+@font-face {
+  font-family: "Lora", sans-serif;
+  src: url("@fonts/lora/Lora-Bold.ttf");
+  src: url("@fonts/lora/Lora-Medium.ttf");
+  src: url("@fonts/lora/Lora-Regular.ttf");
+}
 
 .h1 {
   margin-bottom: 56px;

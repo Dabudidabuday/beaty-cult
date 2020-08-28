@@ -5,9 +5,6 @@ import Slider from '../slider.js';
  * @param htmlElement {HTMLElement}
  */
 
-
-
-
 class TeacherSlider {
     constructor(htmlElement, settings) {
         this._root = htmlElement;

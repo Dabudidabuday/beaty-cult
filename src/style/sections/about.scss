@@ -3,10 +3,9 @@
 }
 
 .about-description {
-  max-width: 315px;
+  max-width: 25rem;
   margin-bottom: 3.5rem;
   font-size: $baseFontSizeAsRem;
-  line-height: 14px;
 }
 
 .features-list {
@@ -14,13 +13,12 @@
   display: flex;
   justify-content: space-between;
   flex-wrap: wrap;
+  text-align: center;
 
   .item {
+    flex-basis: 33%;
     margin-bottom: 2.75rem;
-    display: grid;
-    place-items: center;
     font-size: 0.875rem;
-    text-align: center;
 
     .item-img {
       @include size(114px, 114px);
@@ -67,15 +65,15 @@
       padding: 0;
 
       .item-title {
-        display: inline;
         max-width: 120px;
+        text-align: center;
       }
     }
 
     .about-background {
       display: flex;
       align-items: center;
-      justify-content: center;
+      justify-content: flex-end;
 
       img {
         transform: translateY(-5rem);

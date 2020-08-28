@@ -2,10 +2,15 @@
 .section {
   .swiper-container {
     //width: 100%;
+    overflow: visible;
 
     .swiper-button-prev,
     .swiper-button-next {
       display: none;
+    }
+
+    @media screen and(min-width: $mediumScreen) {
+      overflow: hidden;
     }
 
   }

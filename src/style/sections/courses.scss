@@ -20,9 +20,18 @@
       flex-basis: 50%;
       border-left: 1px solid #E7E8EA;
 
+      .card__img {
+        img {
+          width: $baseFontSizeAsRem * 31.5;
+        }
+
+
+      }
+
       .card__description {
         padding-left: 2.5rem;
         padding-bottom: 2.5rem;
+        //max-width: 90%;
       }
 
       .card-text {
@@ -34,9 +43,9 @@
       .card__info {
         margin-bottom: 2.5rem;
         display: flex;
-        justify-content: space-between;
 
         .card__info-bullet {
+          margin-right: $baseFontSizeAsRem * 1.5;
           display: flex;
           align-items: center;
 
@@ -66,10 +75,4 @@
       }
     }
   }
-
-
-
-
-
-
 }

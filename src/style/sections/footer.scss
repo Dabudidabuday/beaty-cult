@@ -33,12 +33,18 @@
     display: flex;
     align-items: center;
     justify-content: space-between;
-    width: 56px;
-    height: 56px;
+    width: $baseFontSizeAsRem * 3.5;
+    height: $baseFontSizeAsRem * 3.5;
 
     .item-link {
       display: block;
       margin: 0 auto;
+
+      svg {
+        fill: #A8CEC2;
+        width: 1.5rem;
+        height: 1.5rem;
+      }
     }
   }
 }

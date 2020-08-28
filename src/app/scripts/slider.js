@@ -14,14 +14,13 @@ class Slider {
             centeredSlides: true,
             speed: 500,
             breakpoints: {
-
                 320: {
                     slidesPerView: 1.2,
                     spaceBetween: 20
                 },
 
                 1024: {
-                    slidesPerView: 3,
+                    slidesPerView: 4,
                     spaceBetween: 16
                 },
             },

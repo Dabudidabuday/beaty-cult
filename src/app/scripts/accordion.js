@@ -7,6 +7,7 @@ accordionItems.forEach(item => {
     let innerList = item.querySelector('.accordion__inner-list');
     let btn = item.querySelector('.btn-accordion');
     title.addEventListener('click', function() {
+
         innerList.classList.toggle('visually-hidden');
         btn.classList.toggle('active');
     })
