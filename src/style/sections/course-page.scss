@@ -1,0 +1,232 @@
+.course-page {
+  .courses__card {
+    display: block;  // определяем страницу по классу на <body> и если да, то показываем карту на мобильном уровне
+  }
+
+  .section {
+    padding: 4.5rem 0;
+  }
+
+  .header {
+    background-color: #fff;
+
+    .flex-container {
+      padding: 0 1rem;
+    }
+  }
+
+  .hero-course {
+    padding: 0;
+  }
+
+  .courses-img {
+    margin-bottom: 3.5rem;
+
+    img {
+      width: 120%;
+      transform: translateX(-10%);
+    }
+
+  }
+
+  .courses__card {
+    display: block;  // показываем инфо карточку о курсах
+
+
+    .card-title {
+      margin-bottom: 1.5rem;
+    }
+
+    .card-text {
+      margin-bottom: 1.875rem;
+    }
+
+    .card__info {
+      margin-bottom: 2.5rem;
+      display: flex;
+      flex-wrap: wrap;
+
+      .card__info-bullet {
+        margin-right: $baseFontSizeAsRem * 1.5;
+        display: flex;
+        align-items: center;
+
+        &:last-child {
+          margin-top: 1.5rem;
+        }
+
+        .bullet-icon {
+          margin-right: 0.5rem;
+          width: 2rem;
+          height: 2rem;
+          background-color: $colorGrey;
+        }
+      }
+    }
+  }
+
+}
+
+.hero-course {
+  position: relative;
+}
+
+.course-promo {
+  padding: 3.5rem 0;
+  display: grid;
+  place-items: center;
+}
+
+// STAGES
+
+.stage-img {
+  margin-bottom: 5.625rem;
+  img {
+    width: 120%;
+    transform: translateX(-10%);
+  }
+}
+
+// ----  STAGES
+
+
+
+// certificate
+
+.certificate-img {
+  margin-bottom: 3.5rem;
+
+  img {
+    width: 100%;
+    height: auto;
+  }
+}
+
+// ---- certificate
+
+
+// REVIEW
+
+.review-card {
+  padding: 22px;
+  border: 2px solid #EFF6F4;
+  border-radius: 10px;
+
+  .review-card__author {
+    margin-bottom: 1.25rem;
+    display: flex;
+    align-items: center;
+
+    .author-img {
+      margin-right: 1rem;
+      img {
+        width: 4.25rem;
+        height: 4.25rem;
+      }
+    }
+
+    .author-name {
+      font-weight: bold;
+    }
+  }
+
+  .review-card__text {
+    margin-bottom: 1.5rem;
+  }
+}
+
+
+
+
+
+// ---- REVIEW
+
+
+@media screen and(min-width: $mediumScreen) {
+  .course-page {
+    .hero-course {
+      height: 100vh;
+    }
+
+    .hero-course-container {
+      display: flex;
+      flex-direction: row-reverse;
+      align-items: center;
+      justify-content: space-between;
+      height: 100%;
+    }
+
+    .courses__card,
+    .courses-img {
+      flex-basis: 48%;
+    }
+
+    .courses-img,
+    .stage-img {
+      margin-bottom: 0;
+      img {
+        width: 100%;
+        transform: none;
+      }
+    }
+
+    .courses__card .card__info .card__info-bullet:last-child {
+      margin-top: 0;
+    }
+
+    .stages-container {
+      display: flex;
+      flex-direction: row-reverse;
+      align-items: center;
+
+      .container {
+        padding: 0;
+      }
+    }
+
+    .stages-container--reverse {
+      flex-direction: row;
+    }
+
+    .stage-img {
+      flex-basis: 100%;
+    }
+
+    .stage-description {
+      padding-left: 3rem;
+      width: 80%;
+    }
+
+    .certificate-wrapper {
+      display: flex;
+      align-items: center;
+
+      .certificate-img,
+      .certificate-description {
+        flex-basis: 50%;
+      }
+
+      .certificate-img {
+        margin-bottom: 0;
+      }
+
+      .certificate-description {
+        padding-left: 3.75rem;
+        padding-right: 2rem;
+      }
+    }
+  }
+}
+
+@media screen and(min-width: $extraLargeScreen) {
+  .course-page {
+    .section {
+      padding: 9rem 0;
+    }
+
+    .course-promo {
+      padding: 7rem 0;
+    }
+  }
+}
+

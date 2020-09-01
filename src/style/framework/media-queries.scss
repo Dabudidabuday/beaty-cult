@@ -10,6 +10,10 @@
   body {
     font-size: $baseFontSize * 2 !important;
   }
+
+  .section {
+    padding: 90px 0;
+  }
 }
 
 @media screen and (min-width: $mediumScreen) and (max-width: $largeScreen) {
@@ -20,21 +24,34 @@
 
   .container {
     padding: 0 76px;
-    //max-width: $mediumScreen;
     width: 100%;
-    //margin: 0 auto;
   }
 }
 
-@media screen and (min-width: $largeScreen) {
+@media screen and (min-width: $largeScreen) and (max-width: $extraLargeScreen) {
   html,
   body {
     font-size: $baseFontSize !important;
   }
+
+  .container {
+    padding: 0 91px;
+    max-width: $largeScreen;
+    width: 100%;
+    margin: 0 auto;
+  }
 }
 
-//@media screen and (min-width: $mediumScreen) {
-//  .app-section {
-//    margin: 45px auto;
-//  }
-//}
+@media screen and(min-width: $extraLargeScreen) {
+  html,
+  body {
+    font-size: $baseFontSize !important;
+  }
+
+  .container {
+    padding: 0 144px;
+    max-width: $extraLargeScreen;
+    width: 100%;
+    margin: 0 auto;
+  }
+}

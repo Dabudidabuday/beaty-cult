@@ -2,6 +2,10 @@
   display: none; // прячем фотку на мобилке и таблете
 }
 
+.about-title {
+  margin-bottom: 1rem;
+}
+
 .about-description {
   max-width: 25rem;
   margin-bottom: 3.5rem;
@@ -26,7 +30,7 @@
       justify-content: center;
       align-items: center;
       margin-bottom: 9px;
-      border: 1px solid $colorGrey;
+      border: 1px solid $colorAccent;
       border-radius: 50%;
 
       img {
@@ -44,6 +48,7 @@
       max-width: 120px;
       width: 100%;
       font-size: $baseFontSizeAsRem * 0.875;
+      text-align: center;
 
       @media screen and(min-width: 768px) {
         max-width: 240px;
@@ -79,6 +84,17 @@
         transform: translateY(-5rem);
         width: 70%;
         height: auto;
+      }
+    }
+  }
+}
+
+@media screen and (min-width: $extraLargeScreen) {
+  .features-list {
+    .item {
+      .item-img {
+        width: 11.125rem;
+        height: 11.125rem;
       }
     }
   }

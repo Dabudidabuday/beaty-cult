@@ -1,15 +1,15 @@
-const HtmlWebpackPlugin = require('html-webpack-plugin'); // Require  html-webpack-plugin plugin
+const HtmlWebpackPlugin = require('html-webpack-plugin');
 const path = require('path');
 
 module.exports = {
     mode: 'development',
-    entry: __dirname + "/src/app/index.js", // webpack entry point. Module to start building dependency graph
+    entry: __dirname + "/src/app/index.js",
     output: {
-        path: __dirname + '/dist', // Folder to store generated bundle
-        filename: 'bundle.js',  // Name of generated bundle after build
-        publicPath: '/' // public URL of the output directory when referenced in a browser
+        path: __dirname + '/dist',
+        filename: 'bundle.js',
+        publicPath: '/'
     },
-    module: {  // where we defined file patterns and their loaders
+    module: {
         rules: [
             {
                 test: /\.js$/,
@@ -21,11 +21,11 @@ module.exports = {
             {
                 test: /\.(sass|scss|css)$/,
                 use: [{
-                    loader: "style-loader" // creates style nodes from JS strings
+                    loader: "style-loader"
                 }, {
-                    loader: "css-loader" // translates CSS into CommonJS
+                    loader: "css-loader"
                 }, {
-                    loader: "sass-loader" // compiles Sass to CSS
+                    loader: "sass-loader"
                 }]
             },
             {
@@ -34,6 +34,15 @@ module.exports = {
                 'file-loader',
                 ],
             },
+            {
+                test: /\.(html)$/,
+                use: {
+                    loader: 'html-loader',
+                    options: {
+                        // attributes: ['img:src', 'link:href']
+                    }
+                }
+            }
         ]
     },
     plugins: [  // Array of plugins to apply to build chunk

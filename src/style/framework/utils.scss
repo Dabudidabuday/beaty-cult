@@ -7,8 +7,6 @@
   transition: all .3s;
 }
 
-
-
 .push-left   { margin-right: auto; }
 .push-right  { margin-left: auto; }
 .push-top    { margin-bottom: auto; }
@@ -64,5 +62,18 @@
 
   .show-mobile {
     visibility: hidden;
+  }
+}
+
+.btn-group {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: stretch;
+  gap: 1rem;
+
+  @media screen and(min-width: $mediumScreen) {
+    flex-direction: unset;
+    justify-content: unset;
   }
 }

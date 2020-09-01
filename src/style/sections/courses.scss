@@ -4,6 +4,7 @@
 
 .section.courses {
   padding-top: 0;  // убрали заданнный отступ секции
+  padding-bottom: 0;
 }
 
 .accordion {
@@ -18,25 +19,33 @@
     .courses__card {
       display: block;  // показываем инфо карточку о курсах
       flex-basis: 50%;
-      border-left: 1px solid #E7E8EA;
+      border-left: 1px solid $colorAccent;
 
       .card__img {
+        position: relative;
         img {
-          width: $baseFontSizeAsRem * 31.5;
+          //width: $baseFontSizeAsRem * 31.5;
+          width: 100%;
         }
 
-
+        .card__img--additional {
+          position: absolute;
+          top: 0;
+          right: 0;
+          width: 35%;
+          transform: translateX(50%);
+        }
       }
 
       .card__description {
         padding-left: 2.5rem;
         padding-bottom: 2.5rem;
-        //max-width: 90%;
       }
 
       .card-text {
         margin-top: 4.8rem;
         margin-bottom: 1.875rem;
+        max-width: 80%;
         font-size: $baseFontSizeAsRem;
       }
 
@@ -72,6 +81,22 @@
 
       .separator::after {
         left: -9999px;
+      }
+    }
+  }
+}
+
+@media screen and (min-width: $extraLargeScreen) {
+  .courses-container {
+    .courses__card {
+      .card-text {
+        max-width: 60%;
+      }
+
+      .card__img {
+        img {
+          width: 853px;
+        }
       }
     }
   }

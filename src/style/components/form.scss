@@ -5,17 +5,19 @@
 }
 
 .input-label {
-  font-size: 14px;
+  margin-bottom: 2px;
+  display: block;
+  font-size: 0.8rem;
   color: #A3B5B0;
   font-weight: normal;
 }
 
 .form-input {
   position: relative;
-  margin-bottom: 28px;
-  width: 328px;
-  height: 26px;
-  font-size: 16px;
+  margin-bottom: 1.75rem;
+  width: 20.5rem;
+  height: 1.5rem;
+  font-size: 1rem;
   font-weight: bold;
   color: #333333;
   background-color: transparent;

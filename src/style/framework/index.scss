@@ -21,4 +21,12 @@ body {
 .section {
   padding: 56px 0;
   overflow: hidden;
+
+  @media screen and(min-width: $smallScreen) {
+    padding: 90px 0;
+  }
+
+  @media screen and(min-width: $mediumScreen) {
+    padding: 110px 0;
+  }
 }

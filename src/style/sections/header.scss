@@ -27,3 +27,16 @@
   font-weight: bold;
   border-radius: 0;
 }
+
+
+@media screen and(min-width: $smallScreen) and(max-width: $mediumScreen){
+  .header {
+    .header-logo {
+      padding: 18px 0;
+
+      img {
+        height: 28px;
+      }
+    }
+  }
+}

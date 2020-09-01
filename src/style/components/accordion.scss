@@ -11,9 +11,13 @@
     cursor: pointer;
 
     .item__title {
-      font-family: "Lora", serif;
-      color: $colorPrimary;
+      font-family: "Lora-Regular", serif;
       font-size: $baseFontSizeAsRem;
+
+      &.active {
+        color: $colorPrimary;
+        background-color: transparent;
+      }
     }
   }
 

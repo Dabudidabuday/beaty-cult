@@ -1,5 +1,5 @@
 // ----- screens
-//$largeScreen: 1920px;
+$extraLargeScreen: 1920px;
 $largeScreen: 1440px;
 $mediumScreen: 1024px;
 $smallScreen: 768px;
@@ -9,7 +9,7 @@ $extraSmallScreen: 360px;
 $baseContainerPadding: 1rem;
 
 // ----- fonts
-$mainFont: 'Roboto', sans-serif;
+$mainFont: "Roboto-Regular", sans-serif;
 $baseFontSize: 16px;
 $baseFontSizeAsRem: 1rem;
 

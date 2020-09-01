@@ -1,29 +1,72 @@
-@font-face {
-  font-family: "Roboto", sans-serif;
-  src: url("@fonts/roboto/Roboto-Thin.ttf");
-  src: url("@fonts/roboto/Roboto-Light.ttf");
-  src: url("@fonts/roboto/Roboto-LightItalic.ttf");
-  src: url("@fonts/roboto/Roboto-Regular.ttf");
-  src: url("@fonts/roboto/Roboto-Medium.ttf");
-  src: url("@fonts/roboto/Roboto-Bold.ttf");
+ @font-face {
+  font-family: "Roboto-Light", sans-serif;
+  src: url("@fonts/roboto/Roboto-Light.ttf") format('truetype');
+}
 
+
+@font-face {
+  font-family: "Roboto-Regular", sans-serif;
+  src: url("@fonts/roboto/Roboto-Regular.ttf") format('truetype');
+  font-weight: normal;
+  font-style: normal;
 }
 
 @font-face {
-  font-family: "Lora", sans-serif;
-  src: url("@fonts/lora/Lora-Bold.ttf");
-  src: url("@fonts/lora/Lora-Medium.ttf");
-  src: url("@fonts/lora/Lora-Regular.ttf");
+  font-family: "Roboto-Medium", sans-serif;
+  src: url("@fonts/roboto/Roboto-Medium.ttf") format('truetype');
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "Roboto-Bold", sans-serif;
+  src: url("@fonts/roboto/Roboto-Bold.ttf") format('truetype');
+  font-weight: normal;
+  font-style: normal;
+}
+
+
+
+
+
+@font-face {
+  font-family: 'Lora-Regular';
+  src: url('@fonts/lora/Lora-Regular.ttf') format('truetype');
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Lora-Medium';
+  src: url('@fonts/lora/Lora-Medium.ttf') format('truetype');
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Lora-Bold';
+  src: url('@fonts/lora/Lora-Bold.ttf') format('truetype');
+  font-weight: normal;
+  font-style: normal;
 }
 
 .h1 {
   margin-bottom: 56px;
-  font-family: "Lora", serif;
+  font-family: "Lora-Bold", serif;
   font-size: $baseFontSizeAsRem * 1.625;
   font-weight: bold;
+
+  @media screen and(min-width: $smallScreen) and(max-width: $mediumScreen) {
+    margin-bottom: 110px;
+  }
+
+  @media screen and(min-width: $mediumScreen) {
+    margin-bottom: 42px;
+  }
 }
 
 .h3 {
+  font-family: "Roboto-Light", sans-serif;
   font-weight: 300;
   font-size: $baseFontSizeAsRem;
 }
