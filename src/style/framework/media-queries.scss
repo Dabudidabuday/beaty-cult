@@ -45,7 +45,7 @@
 @media screen and(min-width: $extraLargeScreen) {
   html,
   body {
-    font-size: $baseFontSize !important;
+    font-size: $baseFontSize * 1.375 !important;
   }
 
   .container {

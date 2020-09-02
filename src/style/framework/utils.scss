@@ -18,6 +18,7 @@
 
 .separator::after {
   position: absolute;
+  left: 0;
   margin-left: -16px;
   margin-right: -16px;
   content: '';

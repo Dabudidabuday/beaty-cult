@@ -92,9 +92,16 @@
 @media screen and (min-width: $extraLargeScreen) {
   .features-list {
     .item {
+      flex-basis: unset;
+
       .item-img {
         width: 11.125rem;
         height: 11.125rem;
+      }
+
+      .item-title {
+        margin: 0 auto;
+        max-width: 160px;
       }
     }
   }

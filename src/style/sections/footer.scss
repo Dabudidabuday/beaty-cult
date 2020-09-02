@@ -8,8 +8,6 @@
   }
 }
 
-
-
 .footer__contacts {
   padding: 2.125rem 0;
   position: absolute;
@@ -29,8 +27,6 @@
       line-height: 1rem;
     }
   }
-
-
 }
 
 .social-list {
@@ -55,6 +51,23 @@
     }
   }
 }
+
+.social-link {
+  transition: $buttonAnimation;
+
+  &:hover {
+    svg path {
+      fill: $colorHover;
+    }
+  }
+
+  &:active {
+    svg path {
+      fill: $colorFocus;
+    }
+  }
+}
+
 
 
 @media screen and (min-width: $mediumScreen) {

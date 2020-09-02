@@ -4,9 +4,9 @@ const btnClose = document.querySelector('#btnMenuClose');
 
 btnOpen.addEventListener('click', function() {
     menu.classList.remove('visually-hidden');
-})
+});
 
 btnClose.addEventListener('click', function() {
     menu.classList.add('visually-hidden');
-})
+});
 
