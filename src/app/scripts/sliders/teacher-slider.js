@@ -4,7 +4,6 @@ import Slider from '../slider.js';
  * @constructor
  * @param htmlElement {HTMLElement}
  */
-
 class TeacherSlider {
     constructor(htmlElement, settings) {
         this._root = htmlElement;
@@ -20,8 +19,6 @@ class TeacherSlider {
             }
         }
     }
-
-
 
     /**
      * @private

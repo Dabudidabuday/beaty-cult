@@ -43,6 +43,20 @@
         height: $baseFontSizeAsRem / 16;
         background-color: $colorFontMain;
       }
+
+      &:hover::before {
+        background-color: $colorHover;
+      }
+
+      .item-link:hover {
+        color: $colorHover;
+      }
+
+      @media screen and (max-width: $smallScreen) {
+        &:active {
+          background-color: $colorAccent;
+        }
+      }
     }
 
     .item-link {

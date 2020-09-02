@@ -3,7 +3,8 @@ import 'swiper/swiper-bundle.css';
 
 class Slider {
     constructor(htmlElement, outerSettings) {
-        this._root = htmlElement.querySelector(".swiper-container");
+        this._root = htmlElement;
+        this._container = null;
 
         this.defaultSettigns = {
             direction: 'horizontal',
@@ -37,6 +38,17 @@ class Slider {
 
     /**
      * @private
+     * @method _setContainer
+     * @returns {void}
+     */
+    _setContainer() {
+        if (this._root) {
+            this._container = this._root.querySelector(".swiper-container");
+        }
+    }
+
+    /**
+     * @private
      * @method _getSettings
      * @returns {Object}
      */
@@ -50,10 +62,16 @@ class Slider {
      * @returns {void}
      */
     _init() {
-        this.slider = new Swiper(this._root, this._getSettings());
+        this.slider = new Swiper(this._container, this._getSettings());
     }
 
+    /**
+     * @public
+     * @method run
+     * @returns {void}
+     */
     run() {
+        this._setContainer();
         this._init();
     }
 }

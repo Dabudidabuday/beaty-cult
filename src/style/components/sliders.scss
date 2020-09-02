@@ -13,28 +13,19 @@
       overflow: hidden;
     }
 
+    .swiper-slide {
+      width: 100%;
+      height: auto;
+      z-index: 100;
+
+      img {
+        background-size: cover;
+        width: 100%;
+        height: 100%;
+      }
+    }
+
   }
 }
 
 
-.swiper-slide {
-  //height: 288px;
-
-  img {
-    width: 100%;
-    height: 100%;
-    background-size: cover;
-  }
-}
-
-.swiper-slide {
-  width: 100%; /* full width */
-  height: 100%; /* height of carousel */
-  z-index: 100;
-
-  img {
-    background-size: cover;
-    width: 100%;
-    height: 100%;
-  }
-}

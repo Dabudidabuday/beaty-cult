@@ -23,31 +23,21 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="4e48a4bf-ce99-40a4-ba92-4a059b424bf1" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/src/public/course.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/style/components/icons.scss" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/style/sections/course-page.scss" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/package-lock.json" beforeDir="false" afterPath="$PROJECT_DIR$/package-lock.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/package.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/app/scripts/accordion.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/app/scripts/accordion.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/app/scripts/menu-navigation.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/app/scripts/menu-navigation.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/app/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/app/index.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/app/scripts/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/app/scripts/index.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/app/scripts/slider.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/app/scripts/slider.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/public/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/public/index.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/style/app.scss" beforeDir="false" afterPath="$PROJECT_DIR$/src/style/app.scss" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/style/components/accordion.scss" beforeDir="false" afterPath="$PROJECT_DIR$/src/style/components/accordion.scss" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/style/components/buttons.scss" beforeDir="false" afterPath="$PROJECT_DIR$/src/style/components/buttons.scss" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/style/components/form.scss" beforeDir="false" afterPath="$PROJECT_DIR$/src/style/components/form.scss" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/style/components/index.scss" beforeDir="false" afterPath="$PROJECT_DIR$/src/style/components/index.scss" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/style/framework/index.scss" beforeDir="false" afterPath="$PROJECT_DIR$/src/style/framework/index.scss" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/style/components/sliders.scss" beforeDir="false" afterPath="$PROJECT_DIR$/src/style/components/sliders.scss" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/style/framework/media-queries.scss" beforeDir="false" afterPath="$PROJECT_DIR$/src/style/framework/media-queries.scss" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/style/framework/typography.scss" beforeDir="false" afterPath="$PROJECT_DIR$/src/style/framework/typography.scss" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/style/framework/normalize.scss" beforeDir="false" afterPath="$PROJECT_DIR$/src/style/framework/normalize.scss" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/style/framework/utils.scss" beforeDir="false" afterPath="$PROJECT_DIR$/src/style/framework/utils.scss" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/style/framework/variables.scss" beforeDir="false" afterPath="$PROJECT_DIR$/src/style/framework/variables.scss" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/style/sections/about.scss" beforeDir="false" afterPath="$PROJECT_DIR$/src/style/sections/about.scss" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/style/sections/courses.scss" beforeDir="false" afterPath="$PROJECT_DIR$/src/style/sections/courses.scss" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/style/sections/footer.scss" beforeDir="false" afterPath="$PROJECT_DIR$/src/style/sections/footer.scss" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/style/sections/header.scss" beforeDir="false" afterPath="$PROJECT_DIR$/src/style/sections/header.scss" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/style/sections/promo.scss" beforeDir="false" afterPath="$PROJECT_DIR$/src/style/sections/promo.scss" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/webpack.config.js" beforeDir="false" afterPath="$PROJECT_DIR$/webpack.config.js" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -159,7 +149,7 @@
       <workItem from="1598356948362" duration="23133000" />
       <workItem from="1598613850591" duration="7704000" />
       <workItem from="1598796316386" duration="16786000" />
-      <workItem from="1598978700057" duration="3067000" />
+      <workItem from="1598978700057" duration="7769000" />
     </task>
     <servers />
   </component>
@@ -219,10 +209,10 @@
       <screen x="0" y="0" width="1440" height="900" />
     </state>
     <state x="520" y="364" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2/0.0.1440.900@0.0.1440.900" timestamp="1598614472417" />
-    <state x="422" y="184" width="596" height="580" key="find.popup" timestamp="1598978862413">
+    <state x="422" y="184" width="596" height="580" key="find.popup" timestamp="1599029291637">
       <screen x="0" y="0" width="1440" height="900" />
     </state>
-    <state x="422" y="184" width="596" height="580" key="find.popup/0.0.1440.900@0.0.1440.900" timestamp="1598978862413" />
+    <state x="422" y="184" width="596" height="580" key="find.popup/0.0.1440.900@0.0.1440.900" timestamp="1599029291637" />
     <state x="385" y="196" width="670" height="158" key="search.everywhere.popup" timestamp="1598980946409">
       <screen x="0" y="0" width="1440" height="900" />
     </state>

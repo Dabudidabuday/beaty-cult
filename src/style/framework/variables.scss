@@ -19,6 +19,9 @@ $colorFontMain: #2F2F2F;
 
 $colorPrimary: #A8CEC2;
 $colorAccent: #EFF6F4;
+$colorHover: #B4DFD1;
+$colorFocus: #9EBBB3;
+
 
 
 // ----- Additional colors
@@ -27,5 +30,5 @@ $colorBlack: #000000;
 $colorGrey: #DADADA;
 $colorDarkGrey: #636E6B;
 
-
-
+//Behaviour of elements
+$buttonAnimation: all ease-in-out .2s;
