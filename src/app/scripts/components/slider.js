@@ -1,12 +1,20 @@
 import Swiper from 'swiper';
+
 import 'swiper/swiper-bundle.css';
 
+/**
+ * @constructor
+ * @param htmlElement {HTMLElement}
+ * @param outerSettings {Object}
+ */
 class Slider {
     constructor(htmlElement, outerSettings) {
         this._root = htmlElement;
         this._container = null;
+        this._slider = null;
 
-        this.defaultSettigns = {
+        this._outerSettings = outerSettings || {};
+        this._defaultSettigns = {
             direction: 'horizontal',
             loop: true,
             initialSlide: 1,
@@ -31,20 +39,19 @@ class Slider {
                 prevEl: '.swiper-button-next',
             },
         };
-
-        this.outerSettings = outerSettings || {};
-        this.slider = null;
     }
 
     /**
      * @private
      * @method _setContainer
-     * @returns {void}
+     * @returns {Slider}
      */
     _setContainer() {
         if (this._root) {
             this._container = this._root.querySelector(".swiper-container");
         }
+
+        return this;
     }
 
     /**
@@ -53,16 +60,18 @@ class Slider {
      * @returns {Object}
      */
     _getSettings() {
-        return Object.assign(this.defaultSettigns, this.outerSettings);
+        return Object.assign(this._defaultSettigns, this._outerSettings);
     }
 
     /**
      * @private
      * @method _getSettings
-     * @returns {void}
+     * @returns {Slider}
      */
     _init() {
-        this.slider = new Swiper(this._container, this._getSettings());
+        this._slider = new Swiper(this._container, this._getSettings());
+
+        return this;
     }
 
     /**
@@ -71,8 +80,9 @@ class Slider {
      * @returns {void}
      */
     run() {
-        this._setContainer();
-        this._init();
+        this
+            ._setContainer()
+            ._init();
     }
 }
 

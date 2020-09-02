@@ -1,5 +1,6 @@
+// TODO переписать в виде класса и подключать где нужно
+
 let accordionItems = Array.from(document.querySelectorAll('.accordion > .item'));
-// let accordionButtons = Array.from(document.querySelectorAll('.btn-accordion'));
 
 function hideAllExcept (title, button) {
     let innerLists = Array.from(document.querySelectorAll('.accordion .accordion__inner-list'));

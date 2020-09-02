@@ -1,3 +1,5 @@
+// TODO переписать в виде класса и подключать где нужно
+
 const menu = document.querySelector('.header__menu');
 const btnOpen = document.querySelector('#btnMenuOpen');
 const btnClose = document.querySelector('#btnMenuClose');

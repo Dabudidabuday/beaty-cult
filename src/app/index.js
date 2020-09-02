@@ -1,19 +1,14 @@
 import '../style/app.scss';
-import './scripts/index.js';
 
-// import AtmoSlider from "./scripts/sliders/atmo-slider";
-// import TeacherSlider from "./scripts/sliders/teacher-slider";
-import Hero from "./scripts/components/hero";
+import Teachers from "./scripts/sections/Teachers";
 
 class App {
     constructor() {
-        this.atmoSlider = new AtmoSlider(document.querySelector(".atmo"));
-        this.teachersSlider = new TeacherSlider(document.querySelector('.teachers'));
-        this.hero = new Hero('.section.hero');
+        this.teachers = new Teachers(document.querySelector('.section.teachers'));
     }
 
     run() {
-        hero.run();
+        this.teachers.run();
     }
 }
 
