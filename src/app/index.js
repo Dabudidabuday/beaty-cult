@@ -1,6 +1,6 @@
 import '../style/app.scss';
 
-import Teachers from "./scripts/sections/Teachers";
+import Teachers from "./sections/Teachers";
 
 class App {
     constructor() {
