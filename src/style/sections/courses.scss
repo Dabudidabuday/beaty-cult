@@ -4,14 +4,28 @@
 
 .section.courses {
   padding-top: 0;  // убрали заданнный отступ секции
-  padding-bottom: 0;
 }
 
 .accordion {
-  margin-top: 56px;  // добавили отступ секции через аккордеон, потому что карточка должжа быть прижата к верху секции
+  //margin-top: 56px;  // добавили отступ секции через аккордеон, потому что карточка должжа быть прижата к верху секции
+}
+
+@media screen and(min-width: $smallScreen) {
+  .section.courses {
+    padding-top: 90px;
+  }
 }
 
 @media screen and(min-width: $mediumScreen) {
+
+  .section.courses {
+    padding-top: 0;
+  }
+
+  .accordion {
+    margin-top: 56px;  // добавили отступ секции через аккордеон, потому что карточка должжа быть прижата к верху секции
+  }
+
   .courses-container {
     display: flex;
     justify-content: space-between;

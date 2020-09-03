@@ -27,6 +27,17 @@
   background-color: #EFF6F4;
 }
 
+.separator-top::before {
+  position: absolute;
+  left: 0;
+  margin-left: -16px;
+  margin-right: -16px;
+  content: '';
+  width: 100%;
+  height: 1px;
+  background-color: #EFF6F4;
+}
+
 .bold {
   font-weight: bold;
 }
@@ -77,4 +88,14 @@
     flex-direction: unset;
     justify-content: unset;
   }
+}
+
+#light {
+  position: absolute;
+  width: 500px;
+  height: 500px;
+  box-shadow: inset 0 0 150px 150px
+  rgba(0, 0, 0, 0.52);
+  background: #fff;
+  z-index: 10;
 }

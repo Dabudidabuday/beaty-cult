@@ -1,6 +1,15 @@
 .accordion {
   flex-basis: 50%;
 
+  .grid {
+    display: flex;
+    flex-wrap: wrap;
+
+    .item {
+      flex-basis: 42%;
+    }
+  }
+
   .accordion__outer-list {
     @include flexContainer(row);
     justify-content: space-between;

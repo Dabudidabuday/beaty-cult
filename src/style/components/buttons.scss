@@ -10,6 +10,11 @@
   @media screen and(min-width: $smallScreen) {
     padding: 0.75rem 1rem;
   }
+
+  &:focus,
+  &:active {
+    outline: none;
+  }
 }
 
 .btn-primary {
@@ -64,8 +69,6 @@
   }
 }
 
-
-
 .btn-circle {
   padding: 0;
   width: $baseFontSizeAsRem * 2.125;
@@ -93,6 +96,23 @@
   }
 }
 
+.navigation-button {
+  position: absolute;
+  top: 10px;
+  left: calc(50% - 50px);
+  font-family: "Lora-Regular", Serif;
+  font-size: 1rem;
+  background-color: transparent;
+  border: none;
+  cursor: pointer;
+  transition: $buttonAnimation;
+
+  &:focus,
+  &:active {
+    outline: none;
+  }
+}
+
 .btn-line {
   position: absolute;
   top: calc(50% - #{$baseFontSizeAsRem / 16});
@@ -106,6 +126,34 @@
 
 .btn-line--vertical {
   transform: rotate(90deg);
+}
+
+.btn-arrow {
+  position: absolute;
+  top: 30%;
+  right: -20px;
+  border: solid $colorDarkGrey;
+  border-width: 0 3px 3px 0;
+  padding: 3px;
+  transform: rotate(-135deg);
+  transform-origin: center 50%;
+  cursor: pointer;
+  transition: $buttonAnimation;
+
+  &:focus,
+  &:active {
+    outline: none;
+  }
+
+  &.active {
+    transform: rotate(45deg);
+    background-color: transparent;
+    border: solid $colorPrimary;
+  }
+}
+
+.slider-arrow {
+
 }
 
 // To Do специфичность правил кнопки в hero

@@ -1,7 +1,6 @@
 
 .section {
   .swiper-container {
-    //width: 100%;
     overflow: visible;
 
     .swiper-button-prev,
@@ -11,6 +10,35 @@
 
     @media screen and(min-width: $mediumScreen) {
       overflow: hidden;
+
+      .slider-nav-prev,
+      .slider-nav-next {
+        position: absolute;
+        top: 45%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: 56px;
+        height: 56px;
+        background-color: transparent;
+        border-radius: 50%;
+        border: 1px solid $colorHover;
+        z-index: 20;
+        cursor: pointer;
+
+        &::after {
+          height: 14px;
+          width: 6px;
+        }
+      }
+
+      .slider-nav-prev {
+        left: 2%;
+      }
+
+      .slider-nav-next {
+        right: 2%;
+      }
     }
 
     .swiper-slide {
@@ -24,7 +52,6 @@
         height: 100%;
       }
     }
-
   }
 }
 

@@ -35,8 +35,8 @@ class Slider {
             },
 
             navigation: {
-                nextEl: '.swiper-button-prev',
-                prevEl: '.swiper-button-next',
+                nextEl: '.slider-nav-next',
+                prevEl: '.slider-nav-prev',
             },
         };
     }
