@@ -1,8 +1,8 @@
 import '../style/app.scss';
 
-import Teachers from "./scripts/sections/Teachers";
-import Atmo from "./scripts/sections/Atmo";
-import Review from "./scripts/sections/Review";
+import Teachers from "./sections/Teachers";
+import Atmo from "./sections/Atmo";
+import Review from "./sections/Review";
 
 class App {
     constructor() {
@@ -31,7 +31,7 @@ let btnArrow = document.querySelector('.btn-arrow');
 navButton.addEventListener('click', function() {
     navigation.classList.toggle('visually-hidden');
     btnArrow.classList.toggle('active');
-})
+});
 
 
 // TODO переписать в виде класса и подключать где нужно

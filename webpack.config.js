@@ -20,18 +20,16 @@ module.exports = {
             },
             {
                 test: /\.(sass|scss|css)$/,
-                use: [{
-                    loader: "style-loader"
-                }, {
-                    loader: "css-loader"
-                }, {
-                    loader: "sass-loader"
-                }]
+                use: [
+                    "style-loader",
+                    "css-loader",
+                    "sass-loader"
+                ]
             },
             {
                 test: /\.(png|svg|jpg|gif|ttf)$/,
                 use: [
-                'file-loader',
+                    'file-loader',
                 ],
             },
             {
@@ -47,20 +45,20 @@ module.exports = {
     },
     plugins: [  // Array of plugins to apply to build chunk
         new HtmlWebpackPlugin({
-            template: __dirname + "/src/public/index.html",
+            template: __dirname + "/public/course.html",
             inject: 'body'
         })
     ],
-    devServer: {  // configuration for webpack-dev-server
-        contentBase: './src/public',  //source of static assets
-        port: 3000, // port to run dev-server
+    devServer: {
+        contentBase: './src/public',
+        port: 3000,
     },
     resolve: {
         alias: {
-            "@components": path.resolve(__dirname, 'src/app/scripts/components'),
-            "@images": path.resolve(__dirname, 'src/public/assets/images'),
+            "@components": path.resolve(__dirname, 'src/app/components'),
+            "@images": path.resolve(__dirname, 'public/assets/images'),
             "@plugins": path.resolve(__dirname, 'src/app/plugins'),
-            "@fonts": path.resolve(__dirname, 'src/public/assets/fonts'),
+            "@fonts": path.resolve(__dirname, 'public/assets/fonts'),
         }
     }
 };
