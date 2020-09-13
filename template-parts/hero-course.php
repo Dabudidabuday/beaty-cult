@@ -4,13 +4,15 @@ $title = $course['course-title'];
 $description = $course['course-description'];
 $price = $course['course-price'];
 $duration = $course['course-duration'];
-$date = $course['course-date']; ?>
+$date = $course['course-date']; 
+$image = $course['course-image'];
+?>
 
 <section class="section hero-course">
     <div class="container hero-course-container">
         <div class="courses-img">
             <picture>
-                <img src="<?php echo get_template_directory_uri() . '/public/assets/images/courses/1.jpg'; ?>" alt="">
+                <img src="<?php echo $image ?>" alt="">
             </picture>
         </div>
 
@@ -29,7 +31,7 @@ $date = $course['course-date']; ?>
                             <img src="<?php echo get_template_directory_uri() . '/public/assets/images/icons/instagram.svg'; ?>" alt="">
                         </div>
                         <p class="bullet-price bold">
-                            <?php echo $price ?> UAH
+                            <?php echo $price . ' UAH' ?>
                         </p>
                     </div>
 

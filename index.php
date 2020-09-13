@@ -96,8 +96,8 @@
                                                 data-date="<?php echo $date; ?>"
                                                 data-description="<?php echo $description;  ?>"
                                                 data-duration="<?php echo $duration; ?>"
-                                                data-image="<?php echo image; ?>"
-                                                data-additional="<?php echo additionalImage; ?>"
+                                                data-image="<?php echo $image; ?>"
+                                                data-additional="<?php echo $additionalImage; ?>"
                                         >
                                             <?php the_title(); ?>
                                         </a>
@@ -146,7 +146,7 @@
                     </picture>
 
                     <picture>
-                        <img class="course-image-additional card__img--additional" src="" loading=lazy alt="">
+                        <img class="course-image-additional" src="" loading=lazy alt="">
                     </picture>
                 </div>
 

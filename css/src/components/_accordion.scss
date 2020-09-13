@@ -79,16 +79,21 @@
 
     .item-data {
       font-weight: bold;
+      width: 20%;
     }
   }
 
   @media screen and(min-width: $mediumScreen) {
     .grid {
-      display: flex;
-      flex-wrap: wrap;
+      // display: flex;
+      // flex-wrap: wrap;
+      -webkit-column-count: 2;
+      column-count: 2;
+      column-width: auto;
 
       .item {
-        flex-basis: 46%;
+        // flex-basis: 46%;
+        width: 100%;
       }
     }
 

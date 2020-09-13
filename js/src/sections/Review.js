@@ -6,15 +6,16 @@ class Review {
         this._slider = null;
 
         this._swiperSettings = {
-            breakpoints: {
-                1024: {
-                    initialSlide: 0,
-                    slidesPerView: 3,
-                    spaceBetween: 16,
-                    centeredSlides: false,
-                }
-            }
-        }
+          breakpoints: {
+            1024: {
+              initialSlide: 0,
+              slidesPerView: 3,
+              spaceBetween: 16,
+              centeredSlides: true,
+            //   slidesPerView: "auto",
+            },
+          },
+        };
     }
 
     /**

@@ -1,5 +1,8 @@
 .review-card {
   padding: 22px;
+  display: flex;
+  flex-direction: column;
+  max-width: 100%;
   width: 408px;
   height: 276px;
   border: 2px solid #EFF6F4;
@@ -26,11 +29,20 @@
 
   .review-card__text {
     margin-bottom: 1.5rem;
+    // overflow: hidden;
+    // text-overflow: ellipsis;
+    // -webkit-line-clamp: 3;
+    // line-clamp: 3;
+    display: -webkit-box;
+    -webkit-line-clamp: 4;
+    -webkit-box-orient: vertical;  
+    overflow: hidden;
   }
 
   .review-card__source {
     display: flex;
     align-items: center;
+    margin-top: auto;
 
     .source-link {
       margin-left: 0.5rem;

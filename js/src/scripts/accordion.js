@@ -32,4 +32,19 @@ accordionItems.forEach( (item, index)  => {
         innerList.classList.toggle('visually-hidden');
         btn.classList.toggle('active');
     });
+
+
+});
+
+// open first item on window downloaded
+document.addEventListener("DOMContentLoaded", function () {
+    let firstItem = accordionItems[0];
+     const outerList = firstItem.querySelector(".accordion__outer-list");
+     const innerList = firstItem.querySelector(".accordion__inner-list");
+     const title = firstItem.querySelector(".item__title");
+     const btn = firstItem.querySelector(".btn-accordion");
+
+    title.classList.toggle("active");
+    innerList.classList.toggle("visually-hidden");
+    btn.classList.toggle("active");
 });

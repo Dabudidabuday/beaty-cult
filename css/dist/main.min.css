@@ -184,11 +184,13 @@ a {
   margin-right: 0.5rem; }
 
 .show-desktop {
-  visibility: hidden; }
+  visibility: hidden;
+  display: none; }
 
 @media screen and (min-width: 1024px) {
   .show-desktop {
-    visibility: visible; }
+    visibility: visible;
+    display: unset; }
   .show-mobile {
     display: none;
     visibility: hidden; } }
@@ -559,13 +561,16 @@ input:-webkit-autofill:active {
         outline: none;
         color: #A8CEC2; }
     .accordion .accordion__inner-list .item-data {
-      font-weight: bold; }
+      font-weight: bold;
+      width: 20%; }
   @media screen and (min-width: 1024px) {
     .accordion .grid {
-      display: flex;
-      flex-wrap: wrap; }
+      -moz-column-count: 2;
+           column-count: 2;
+      -moz-column-width: auto;
+           column-width: auto; }
       .accordion .grid .item {
-        flex-basis: 46%; }
+        width: 100%; }
     .accordion .item {
       margin-right: 1rem;
       display: inline-block; }
@@ -585,13 +590,17 @@ input:-webkit-autofill:active {
   height: 100vh;
   background-color: #fff;
   z-index: 10; }
-
-.menu-top {
-  position: relative;
-  height: 2.625rem; }
-  .menu-top .header-logo svg {
-    width: 100%;
-    height: 100%; }
+  .header__menu .menu-top {
+    position: relative;
+    height: 2.625rem; }
+    .header__menu .menu-top .header-logo svg {
+      width: 100%;
+      height: 100%; }
+  .header__menu .menu-content {
+    padding-top: 58px; }
+    @media screen and (min-width: 768px) and (max-width: 1024px) {
+      .header__menu .menu-content {
+        padding-top: 116px; } }
 
 .section .swiper-container {
   overflow: visible; }
@@ -905,13 +914,21 @@ input:-webkit-autofill:active {
       .courses-container .courses__card .card__img {
         position: relative; }
         .courses-container .courses__card .card__img img {
+          -o-object-fit: cover;
+             object-fit: cover;
           width: 100%; }
-        .courses-container .courses__card .card__img .card__img--additional {
+        .courses-container .courses__card .card__img .course-image {
+          height: 288px;
+          background-size: cover; }
+        .courses-container .courses__card .card__img .course-image-additional {
           position: absolute;
           top: 0;
           right: 0;
-          width: 35%;
-          transform: translateX(50%); }
+          transform: translateX(50%);
+          width: 161px;
+          height: 322px;
+          -o-object-position: right;
+             object-position: right; }
       .courses-container .courses__card .card__description {
         padding-left: 2.5rem;
         padding-bottom: 110px; }
@@ -941,11 +958,21 @@ input:-webkit-autofill:active {
     .courses-container .accordion .separator::after {
       left: -9999px; } }
 
+@media screen and (min-width: 1440px) {
+  .courses__card .card__img .course-image {
+    height: 378px !important; }
+  .courses__card .card__img .course-image-additional {
+    width: 227.25px !important;
+    height: 434px !important; } }
+
 @media screen and (min-width: 1920px) {
   .courses-container .courses__card .card-text {
     max-width: 60%; }
-  .courses-container .courses__card .card__img img {
-    width: 853px; }
+  .courses-container .courses__card .card__img .course-image {
+    height: 552px !important; }
+  .courses-container .courses__card .card__img .course-image-additional {
+    width: 303px !important;
+    height: 608px !important; }
   .courses__title {
     margin-top: 56px; } }
 
@@ -1158,6 +1185,11 @@ input:-webkit-autofill:active {
 
 .review-card {
   padding: 22px;
+  display: flex;
+  flex-direction: column;
+  max-width: 100%;
+  width: 408px;
+  height: 276px;
   border: 2px solid #EFF6F4;
   border-radius: 10px; }
   .review-card .review-card__author {
@@ -1172,10 +1204,15 @@ input:-webkit-autofill:active {
     .review-card .review-card__author .author-name {
       font-weight: bold; }
   .review-card .review-card__text {
-    margin-bottom: 1.5rem; }
+    margin-bottom: 1.5rem;
+    display: -webkit-box;
+    -webkit-line-clamp: 4;
+    -webkit-box-orient: vertical;
+    overflow: hidden; }
   .review-card .review-card__source {
     display: flex;
-    align-items: center; }
+    align-items: center;
+    margin-top: auto; }
     .review-card .review-card__source .source-link {
       margin-left: 0.5rem;
       display: inline-block;

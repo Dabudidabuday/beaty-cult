@@ -26,7 +26,6 @@
 }
 
 @media screen and(min-width: $mediumScreen) {
-
   .section.courses {
     padding-top: 0;
     padding-bottom: 0;
@@ -49,15 +48,23 @@
         position: relative;
         img {
           //width: $baseFontSizeAsRem * 31.5;
-          width: 100%;
+          object-fit: cover;
+          width: 100%; 
         }
 
-        .card__img--additional {
+        .course-image {
+            height: 288px;
+            background-size: cover;
+        }
+
+        .course-image-additional {
           position: absolute;
           top: 0;
           right: 0;
-          width: 35%;
           transform: translateX(50%);
+          width: 161px;
+          height: 322px;
+          object-position: right;
         }
       }
 
@@ -113,6 +120,21 @@
   }
 }
 
+@media screen and(min-width: $largeScreen) {
+  .courses__card {
+    .card__img {
+        .course-image {
+          height: 378px !important;
+        }
+
+        .course-image-additional {
+            width: 227.25px !important;
+            height: 434px !important;
+        }
+      }
+  }
+}
+
 @media screen and (min-width: $extraLargeScreen) {
   .courses-container {
     .courses__card {
@@ -121,8 +143,13 @@
       }
 
       .card__img {
-        img {
-          width: 853px;
+        .course-image {
+          height: 552px !important;
+        }
+
+        .course-image-additional {
+            width: 303px !important;
+            height: 608px !important;
         }
       }
     }
