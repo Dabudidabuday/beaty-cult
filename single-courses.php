@@ -108,11 +108,13 @@ if($promoText) : ?>
 <?php get_template_part('template-parts/certificate'); ?>
 
 <?php get_template_part('template-parts/review-course'); ?>
-
-    <?php
+<?php
         }
     } ?>
+    
 
 <?php get_template_part('/template-parts/feedback'); ?>
+
+
 
 <?php get_footer(); ?>
