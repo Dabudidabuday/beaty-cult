@@ -1,0 +1,39 @@
+// ----- screens
+$extraLargeScreen: 1920px;
+$largeScreen: 1440px;
+$mediumScreen: 1024px;
+$smallScreen: 768px;
+$extraSmallScreen: 360px;
+
+// ----- containers
+$baseContainerPadding: 1rem;
+
+// ----- fonts
+$mainFont: "Roboto-Regular", sans-serif;
+$baseFontSize: 16px;
+$baseFontSizeAsRem: 1rem;
+
+
+// ----- Main colors
+$colorFontMain: #2F2F2F;
+$colorPrimary: #A8CEC2;
+$colorAccent: #EFF6F4;
+$colorHover: #B4DFD1;
+$colorFocus: #9EBBB3;
+
+
+// ----- Additional colors
+$colorWhite: #ffffff;
+$colorBlack: #000000;
+$colorGrey: #DADADA;
+$colorDarkGrey: #636E6B;
+$colorGrey: #FDFFFF;
+
+//Behaviour of elements
+$buttonAnimation: all ease-in-out .2s;
+
+// lighter
+:root {
+    --cursorX: 50vw;
+    --cursorY: 50vh;
+}

@@ -1,0 +1,89 @@
+.header {
+  position: fixed;
+  top: 0;
+  right: 0;
+  left: 0;
+  padding-top: 16px;
+  padding-bottom: 16px;
+  height: 50px;
+  z-index: 1001;
+
+  //.flex-container {
+  //  padding: 0 2rem;
+  //}
+
+  .header-logo {
+    svg path {
+      z-index: 10000;
+      fill: #fff;
+    }
+  }
+
+  .flex-container {
+    padding: 0 1rem;
+  }
+
+  @media screen and(min-width: $smallScreen) and(max-width: $mediumScreen) {
+    height: 85px;
+    padding-top: 9px;
+
+    .header-logo {
+      svg {
+        width: 200px;
+        height: 33px;
+      }
+    }
+  }
+
+  @media screen and(min-width: $mediumScreen) {
+    height: 38px;
+    padding-top: 11px;
+
+    .header-logo {
+      padding: 0 !important;
+
+      svg {
+        width: 145px;
+        height: 16px;
+      }
+    }
+  }
+
+  @media screen and(min-width: $largeScreen) {
+    height: 42px;
+    padding-top: 14px;
+  }
+
+  @media screen and(min-width: $extraLargeScreen) {
+    height: 58px;
+    padding-top: 16px;
+
+    .header-logo {
+      svg {
+        height: 19px;
+      }
+      
+    }
+  }
+}
+
+.btn-header {
+  position: absolute;
+  top: 0;
+  right: 0;
+  font-weight: bold;
+  border-radius: 0;
+}
+
+
+@media screen and(min-width: $smallScreen) and(max-width: $mediumScreen){
+  .header {
+    .header-logo {
+      padding: 18px 0;
+
+      img {
+        height: 28px;
+      }
+    }
+  }
+}

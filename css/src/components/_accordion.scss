@@ -1,0 +1,112 @@
+.accordion {
+  flex-basis: 50%;
+
+  .accordion__outer-list {
+    @include flexContainer(row);
+    justify-content: space-between;
+    align-items: center;
+
+    position: relative;
+    padding: 0.75rem 0;
+    cursor: pointer;
+
+    .item__title {
+      font-family: "Lora-Regular", serif;
+      font-size: $baseFontSizeAsRem;
+
+      &.active {
+        color: $colorPrimary;
+        background-color: transparent;
+      }
+    }
+  }
+
+  .accordion__inner-list {
+    margin: 1rem 0;
+    font-size: 0.875rem;
+    transition: all .4s;
+
+    .item {
+      position: relative;
+      margin-left: 1rem;
+      padding: 0.625rem 0;
+      display: flex;
+      justify-content: space-between;
+      font-size: $baseFontSizeAsRem * 0.8;
+
+      &::before {
+        content: '';
+        position: absolute;
+        top: 50%;
+        left: -$baseFontSizeAsRem * 0.8;
+        width: $baseFontSizeAsRem / 2;
+        height: $baseFontSizeAsRem / 16;
+        background-color: $colorFontMain;
+      }
+
+      &:hover::before {
+        background-color: $colorHover;
+      }
+
+      .item-link:hover {
+        color: $colorHover;
+        
+      }
+
+      @media screen and (max-width: $smallScreen) {
+        &:active {
+          background-color: $colorAccent;
+        }
+      }
+    }
+
+    .item-link {
+      text-decoration: none;
+      color: $colorFontMain;
+      border: none;
+      background-color: transparent;
+      text-align: left;
+
+      &:focus {
+        outline: none;
+        color: $colorPrimary;
+      }
+
+      // &:active {
+
+      // }
+    }
+
+    .item-data {
+      font-weight: bold;
+    }
+  }
+
+  @media screen and(min-width: $mediumScreen) {
+    .grid {
+      display: flex;
+      flex-wrap: wrap;
+
+      .item {
+        flex-basis: 46%;
+      }
+    }
+
+    .item {
+      margin-right: $baseFontSizeAsRem;
+      display: inline-block;
+    }
+
+    .accordion__outer-list {
+      flex-direction: row-reverse;
+    }
+
+    .accordion__inner-list {
+      margin-left: 3rem;
+    }
+
+    .item__title {
+      margin-left: 8px;
+    }
+  }
+}

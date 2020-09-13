@@ -1,0 +1,37 @@
+/*
+*   Framework
+*/
+@import 'framework/_index';
+
+/*
+*   Components
+*/
+@import 'components/_index';
+
+/*
+*   Sections
+*/
+@import 'sections/_header';
+
+@import 'sections/_hero';
+@import 'sections/_courses';
+@import 'sections/_about';
+@import 'sections/_promo';
+@import 'sections/_atmo';
+@import 'sections/_teachers';
+@import 'sections/_feedback';
+
+@import 'sections/_footer';
+
+
+///*
+//*   Course page styles
+//*/
+@import 'sections/_course-promo-text';
+@import 'sections/_review';
+@import 'sections/_stages';
+//
+///*
+//*   Pages
+//*/
+@import "sections/_course-page";

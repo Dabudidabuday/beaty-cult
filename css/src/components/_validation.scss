@@ -1,0 +1,58 @@
+
+.wpcf7 form.sent .wpcf7-response-output {
+    color: $colorPrimary;
+}
+
+.wpcf7-not-valid {
+    border-bottom: 1px solid #c30000;
+}
+
+.wpcf7 form.invalid .wpcf7-response-output, .wpcf7 form.unaccepted .wpcf7-response-output {
+    margin: 0;
+    padding: 0;
+    border: none;
+}
+
+.wpcf7-response-output {
+    margin: 0 !important;
+    padding: 0 !important;
+    width: 310px;
+    font-size: 12px !important;
+    color: #c30000;
+    text-align: left;
+    border-color: transparent !important;
+    border: none !important;
+}
+
+
+.wpcf7-not-valid-tip {
+    position: absolute;
+    top: 24px;
+    margin: 0;
+    padding: 0;
+    display: block;
+    width: 250px;
+    font-size: 12px !important;
+    font-weight: normal;
+    color: #c30000;
+    text-align: left;
+}
+
+@media screen and(min-width: $smallScreen) and(max-width: $mediumScreen) {
+    .wpcf7-not-valid-tip {
+        top: 50px;
+        width: 383px;
+        font-size: 20px !important;
+    }
+
+    .wpcf7-response-output {
+        width: 540px;
+        font-size: 20px !important;
+    }
+}
+
+@media screen and(min-width: $extraLargeScreen) {
+    .wpcf7-not-valid-tip {
+        top: 31px;
+    }
+}

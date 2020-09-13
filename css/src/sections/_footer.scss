@@ -1,0 +1,91 @@
+.footer {
+  position: relative;
+  height: 100vh;
+  background-image: url('~@images/backgrounds/map.png');
+
+  .footer-title {
+    margin-bottom: 1.25rem;
+  }
+}
+
+.footer__contacts {
+  padding: 2.125rem 0;
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  background-color: $colorWhite;
+
+  .contacts-item {
+    margin-bottom: 0.5rem;
+    width: fit-content;
+    line-height: 26px;
+
+    a {
+      text-decoration: none;
+      color: inherit;
+      line-height: 1rem;
+    }
+  }
+}
+
+.social-list {
+  display: flex;
+
+  .item {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: $baseFontSizeAsRem * 2.5;
+    height: $baseFontSizeAsRem * 3.5;
+
+    .item-link {
+      display: block;
+      margin: 0 auto;
+
+      svg {
+        fill: #A8CEC2;
+        width: 1.5rem;
+        height: 1.5rem;
+      }
+
+      &:first-child {
+        margin-left: 0;
+      }
+    }
+  }
+}
+
+.social-link {
+  transition: $buttonAnimation;
+
+  &:hover {
+    svg path {
+      fill: $colorHover;
+    }
+  }
+
+  &:active {
+    svg path {
+      fill: $colorFocus;
+    }
+  }
+}
+
+
+
+@media screen and (min-width: $mediumScreen) {
+  .footer {
+    height: 50vh;
+  }
+
+  .footer__contacts {
+    max-width: 45%;
+
+    .contacts-item {
+      a {
+        display: inline;
+      }
+    }
+  }
+}

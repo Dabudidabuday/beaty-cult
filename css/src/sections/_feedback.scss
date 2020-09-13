@@ -1,0 +1,19 @@
+.feedback {
+  background-image: url('~@images/backgrounds/feedback-background.png');
+  background-position: center left 33%;
+}
+
+@media screen and(min-width: $mediumScreen) {
+  .feedback-form {
+    text-align: right;
+    margin-right: 10rem;
+  }
+  .form-wrapper {
+    display: inline-flex;
+    justify-content: flex-end;
+  }
+
+  .feedback-title {
+    text-align: left;
+  }
+}

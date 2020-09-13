@@ -1,0 +1,124 @@
+
+.section {
+  .swiper-container {
+    overflow: visible;
+
+    .slider-nav-prev,
+    .slider-nav-next {
+      display: none;
+    }
+
+    .swiper-slide {
+      img {
+        width: 100%;
+        height: auto;
+      }
+    }
+
+
+    @media screen and(min-width: $mediumScreen) {
+      position: unset;
+      overflow: hidden;
+      overflow-y: visible;
+
+      .swiper-slide {
+        width: 100%;
+        height: auto;
+
+        img {
+          background-size: cover;
+          width: 100%;
+          height: 100%;
+        }
+      }
+
+      .slider-nav-prev,
+      .slider-nav-next {
+        position: absolute;
+        top: 0;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: 34px;
+        height: 34px;
+        background-color: transparent;
+        border-radius: 50%;
+        border: 1px solid $colorHover;
+        z-index: 20;
+        cursor: pointer;
+        transition: $buttonAnimation;
+
+        &:hover {
+          background-color: $colorHover;
+        }
+
+        &:focus,
+        &:active {
+          background-color: $colorFocus;
+        }
+
+        svg {
+          height: 16px;
+          width: 8px;
+        }
+
+        &:hover svg path {
+          stroke: $colorDarkGrey;
+        }
+      }
+
+      .slider-nav-prev {
+        right: 134px;
+      }
+
+      .slider-nav-next {
+        right: 76px;
+      }
+    }
+
+    @media screen and(min-width: $largeScreen) {
+
+      .slider-nav-prev,
+      .slider-nav-next {
+        top: -21px;
+        width: 56px;
+        height: 56px;
+      }
+
+      .slider-nav-prev {
+        right: 169px;
+      }
+
+      .slider-nav-next {
+        right: 91px;
+      }
+    }
+
+    @media screen and(min-width: $extraLargeScreen) {
+      .slider-nav-prev,
+      .slider-nav-next {
+        top: -11px;
+
+      }
+
+      .slider-nav-prev {
+        right: 222px;
+      }
+
+      .slider-nav-next {
+        right: 144px;
+      }
+    }
+  }
+}
+
+
+@media screen and(min-width: $mediumScreen) {
+  .atmo,
+  .teachers,
+  .review {
+    .container {
+      position: relative;
+    }
+  }
+}

@@ -1,0 +1,57 @@
+@media screen and (min-width: $extraSmallScreen) and (max-width: $smallScreen) {
+  html,
+  body {
+    font-size: $baseFontSize !important;
+  }
+}
+
+@media screen and (min-width: $smallScreen) and (max-width: $mediumScreen) {
+  html,
+  body {
+    font-size: $baseFontSize * 2 !important;
+  }
+
+  .section {
+    padding: 90px 0;
+  }
+}
+
+@media screen and (min-width: $mediumScreen) and (max-width: $largeScreen) {
+  html,
+  body {
+    font-size: $baseFontSize / 1.1 !important;
+  }
+
+  .container {
+    padding: 0 76px;
+    width: 100%;
+  }
+}
+
+@media screen and (min-width: $largeScreen) and (max-width: $extraLargeScreen) {
+  html,
+  body {
+    font-size: $baseFontSize !important;
+  }
+
+  .container {
+    padding: 0 91px;
+    max-width: $largeScreen;
+    width: 100%;
+    margin: 0 auto;
+  }
+}
+
+@media screen and(min-width: $extraLargeScreen) {
+  html,
+  body {
+    font-size: $baseFontSize * 1.375 !important;
+  }
+
+  .container {
+    padding: 0 144px;
+    max-width: $extraLargeScreen;
+    width: 100%;
+    margin: 0 auto;
+  }
+}

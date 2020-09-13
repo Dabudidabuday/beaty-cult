@@ -1,0 +1,26 @@
+
+.course-promo {
+  margin: 0 auto;
+  display: block;
+
+  .promo-text {
+    margin: 0 auto;
+    display: block;
+    text-align: center;
+    padding: 56px 0;
+
+    @media screen and (min-width: $smallScreen) {
+      padding: 124px 0;
+    }
+
+    @media screen and (min-width: $mediumScreen) {
+      padding: 94px 0;
+      max-width: 40%;
+
+    }
+
+    @media screen and (min-width: $largeScreen) {
+      padding: 144px 0;
+    }
+  }
+}

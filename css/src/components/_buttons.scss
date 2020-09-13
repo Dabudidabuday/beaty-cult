@@ -1,0 +1,204 @@
+.btn {
+  position: relative;
+  padding: 1rem 1.5rem;
+  display: inline-block;
+  border-radius: 2px;
+  cursor: pointer;
+  text-align: center;
+  transition: $buttonAnimation;
+
+  @media screen and(min-width: $smallScreen) {
+    padding: 0.75rem 1rem;
+  }
+
+  &:focus,
+  &:active {
+    outline: none;
+  }
+}
+
+.btn-primary {
+  color: $colorWhite;
+  font-weight: 500;
+  font-size: $baseFontSizeAsRem;
+  background-color: $colorPrimary;
+  border: none;
+
+  &:hover {
+    background-color: $colorHover;
+  }
+
+  &:active {
+    background-color: $colorFocus;
+  }
+}
+
+.btn-outline {
+  font-size: $baseFontSizeAsRem;
+  color: $colorFontMain;
+  background-color: transparent;
+  border: 1px solid $colorAccent;
+
+  &:hover {
+    color: $colorWhite;
+    background-color: $colorHover;
+  }
+
+  &:active {
+    color: $colorFocus;
+    background-color: $colorWhite;
+    border-color: $colorFocus;
+  }
+}
+
+.btn-close {
+  position: absolute;
+  padding: 1.4rem 3rem;
+  top: 0;
+  right: 0;
+  background-color: $colorAccent;
+
+  .btn-line {
+    transform: rotate(45deg);
+    left: calc(50% - 0.625rem);
+    width: $baseFontSizeAsRem * 1.5;
+  }
+
+  .btn-line--vertical {
+    transform: rotate(-45deg);
+  }
+}
+
+.btn-circle {
+  padding: 0;
+  width: $baseFontSizeAsRem * 2.125;
+  height: $baseFontSizeAsRem * 2.125;
+  color: $colorPrimary;
+  background-color: transparent;
+  border: 1px solid #EFF6F4;
+  border-radius: 50%;
+  transition: all .3s;
+
+  &:focus,
+  &:active {
+    outline: none;
+    background-color: $colorAccent;
+  }
+}
+
+.active {
+  background-color: $colorAccent;
+
+  .btn-line--vertical {
+    transform: rotate(180deg);
+    transition: ease-in .3s;
+
+  }
+}
+
+.navigation-button {
+  position: absolute;
+  top: 10px;
+  left: calc(50% - 50px);
+  font-family: "Lora-Regular", Serif;
+  font-size: 1rem;
+  background-color: transparent;
+  border: none;
+  cursor: pointer;
+  transition: $buttonAnimation;
+
+  &:focus,
+  &:active {
+    outline: none;
+  }
+}
+
+.btn-line {
+  position: absolute;
+  top: calc(50% - #{$baseFontSizeAsRem / 16});
+  left: 25%;
+  width: $baseFontSizeAsRem;
+  height: $baseFontSizeAsRem / 8;
+  border-radius: 4px;
+  background-color: $colorPrimary;
+  transition: ease-in .3s;
+}
+
+.btn-line--vertical {
+  transform: rotate(90deg);
+}
+
+.btn-arrow {
+  transform: rotate(45deg);
+  width: 1.25rem;
+  height: 1.25rem;
+  cursor: pointer;
+  transition: $buttonAnimation;
+
+  span {
+    top: 15px;
+    position: absolute;
+    width: .75rem;
+    height: .1rem;
+    background-color: black;
+    display: inline-block;
+    transition: all .3s ease;
+
+    &:first-of-type {
+
+      right: -21px;
+      transform: rotate(45deg);
+    }
+
+    &:last-of-type {
+
+      right: -30px;
+      transform: rotate(-45deg);
+
+    }
+  }
+
+  &:focus,
+  &:active {
+    outline: none;
+  }
+
+  &.active {
+    transform: rotate(-135deg);
+    background-color: transparent;
+    //border: solid $colorPrimary;
+
+    span {
+
+      &:first-of-type {
+        right: -22px;
+        transform: rotate(-45deg);
+      }
+
+      &:last-of-type {
+        right: -31px;
+        transform: rotate(45deg);
+      }
+    }
+
+  }
+}
+
+.slider-arrow {
+  display: inline-flex;
+}
+
+// To Do специфичность правил кнопки в секциях
+
+.hero {
+  .btn-outline {
+    color: $colorWhite;
+    border: 1px solid $colorWhite;
+  }
+}
+
+.feedback {
+  .btn {
+    display: block;
+  }
+}

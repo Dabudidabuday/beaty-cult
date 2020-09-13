@@ -1,0 +1,35 @@
+@import '_normalize';
+@import '_variables';
+@import '_typography';
+
+@import '_mixins';
+@import '_utils';
+@import '_containers';
+@import "_media-queries";
+
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  font-family: $mainFont;
+  font-size: $baseFontSize;
+  color: $colorFontMain;
+  letter-spacing: -0.47px;
+  line-height: 1.375rem;
+}
+
+.section {
+  padding: 56px 0;
+  overflow: hidden;
+
+  @media screen and(min-width: $smallScreen) {
+    padding: 90px 0;
+  }
+
+  @media screen and(min-width: $mediumScreen) {
+    padding: 110px 0;
+  }
+}
+
