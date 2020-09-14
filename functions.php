@@ -32,7 +32,7 @@ function theme_scripts() {
 
     if(is_front_page()){
         wp_enqueue_script('header-styles', get_template_directory_uri() . '/js/src/scripts/header-styles.js', array(), null, true);
-        wp_enqueue_script('accordion-script', get_template_directory_uri() . '/js/src/scripts/accordion.js', array(), null, true);
+        // wp_enqueue_script('accordion-script', get_template_directory_uri() . '/js/src/scripts/accordion.js', array(), null, true);
 		wp_enqueue_script('get-set-course-info', get_template_directory_uri() .'/js/src/scripts/get-set-course-info.js', array(), null, true);
 		wp_enqueue_script('promo-flashlight', get_template_directory_uri() .'/js/src/scripts/promo-flashlight.js', array(), null, true);
 		wp_enqueue_script('image-transition', get_template_directory_uri() .'/js/src/scripts/image-transition.js', array(), null, true);

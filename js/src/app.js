@@ -1,16 +1,20 @@
-// typical import
-import gsap from "gsap";
+'use strict';
+
+// // typical import
+// import gsap from "gsap";
  
-// or get other plugins:
-import Draggable from "gsap/Draggable";
-import ScrollTrigger from "gsap/ScrollTrigger";
+// // or get other plugins:
+// import Draggable from "gsap/Draggable";
+// import ScrollTrigger from "gsap/ScrollTrigger";
  
 // or all tools are exported from the "all" file (excluding bonus plugins):
 // import { gsap, ScrollTrigger, Draggable, MotionPathPlugin } from "gsap/all";
 
 // import './vendors/blotter.min.js';
 
-console.log('gsap library', gsap);
+// console.log('gsap library', gsap);
+
+import './scripts/accordion.js';
 
 import '../../css/src/app.scss';
 
@@ -22,7 +26,7 @@ import Review from "./sections/Review";
 
 class App {
     constructor() {
-        this.atmo = new Atmo(document.querySelector(".section.atmo", ".atmo-slider"));
+        this.atmo = new Atmo(document.querySelector(".section.atmo"));
         this.teachers = new Teachers(document.querySelector('.section.teachers'));
         this.review = new Review(document.querySelector('.section.review'));
     }

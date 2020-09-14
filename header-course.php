@@ -114,9 +114,9 @@
                                         )
                                 )
                             ); ?>
-                            <div class="item separator">
+                            <div class="item accordion-item separator">
                                 <div class="accordion__outer-list">
-                                    <h3 class="item__title"><?php $term->name; var_dump($term->name); ?></h3>
+                                    <h3 class="item__title"><?php echo $term->name; ?></h3>
                                     <button class="btn btn-circle btn-accordion"><span class="btn-line"></span><span class="btn-line btn-line--vertical"></span></button>
                                 </div>
                                 <ul class="accordion__inner-list visually-hidden">
@@ -150,7 +150,7 @@
                                             ?>
 
                                             <li class="item">
-                                                <a href="<?php echo $link;  ?>" class="item-link"><?php $title; ?></a>
+                                                <a href="<?php echo $link;  ?>" class="item-link"><?php echo $title; ?></a>
                                                 <span class="item-data"><?php?><?php echo $duration;  ?></span>
                                             </li>
 

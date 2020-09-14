@@ -53,16 +53,14 @@
     .card__info {
       margin-bottom: 2.5rem;
       display: flex;
-      flex-wrap: wrap;
+      flex-direction: column;
 
       .card__info-bullet {
+        margin-bottom: 0.5rem;
         margin-right: $baseFontSizeAsRem * 1.5;
         display: flex;
         align-items: center;
 
-        &:last-child {
-          margin-top: 1.5rem;
-        }
 
         .bullet-icon {
           margin-right: 0.5rem;
@@ -106,17 +104,11 @@
 // ---- certificate
 
 
-@media screen and(min-width: 440px) {
-  .courses__card .card__info .card__info-bullet:last-child {
-      margin-top: 0 !important;
-    }
-}
-
 //                                             MEDIA QUERIES --------- MEDIUM  SCREEN
 @media screen and(min-width: $mediumScreen) {
   .course-page {
     .hero-course {
-      height: 600px;
+      height: 700px;
     }
 
     .promo-text {
@@ -148,6 +140,10 @@
     .courses__card {
       .card-text {
         width: 24rem;
+      }
+
+      .card__info {
+        flex-direction: row;
       }
     }
 

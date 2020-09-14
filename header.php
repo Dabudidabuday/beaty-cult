@@ -36,151 +36,81 @@
             <div class="container">
                 <div class="menu-content">
                     <div class="accordion">
-                        <div class="item separator">
-                            <div class="accordion__outer-list">
-                                <h3 class="item__title">Парикмахерское искусство</h3>
-                                <button class="btn btn-circle btn-accordion"><span class="btn-line"></span><span class="btn-line btn-line--vertical"></span></button>
-                            </div>
+                        <?php
+                        $terms = get_terms(
+                                array(
+                                    'taxonomy' => 'courses_directions',
+                                    'hide_empty' => true,
+                                    'hierarchical' => false,
+                                )
+                        ); 
+                        
+                        foreach ($terms as $term) { 
+                            
+                            $args = array(
+                                'post_type' => 'courses',
+                                'posts_per_page' => -1,
+                                'tax_query' => array(
+                                        array(
+                                            'taxonomy' => 'courses_directions',
+                                            'field' => 'name',
+                                            'terms' => $term->name
+                                        )
+                                )
+                            ); ?>
+                            <div class="item header-accordion-item separator">
+                                <div class="accordion__outer-list">
+                                    <h3 class="item__title"><?php echo $term->name; ?></h3>
+                                    <button class="btn btn-circle btn-accordion"><span class="btn-line"></span><span class="btn-line btn-line--vertical"></span></button>
+                                </div>
+                                <ul class="accordion__inner-list visually-hidden">
 
-                            <ul class="accordion__inner-list visually-hidden">
-                                <li class="item">
-                                    <a href="" class="item-link">Парикмахер стрижки</a>
-                                    <span class="item-data">14.11 - 15.11</span>
-                                </li>
+                                    <?php
+                                    $args = array(
+                                        'post_type' => 'courses',
+                                        'posts_per_page' => -1,
+                                        'tax_query' => array(
+                                                array(
+                                                    'taxonomy' => 'courses_directions',
+                                                    'field' => 'name',
+                                                    'terms' => $term -> name
+                                                )
+                                        )
+                                    );
 
-                                <li class="item">
-                                    <a href="" class="item-link">Парикмахер модельер</a>
-                                    <span class="item-data">20.11 - 26.11</span>
-                                </li>
+                                    $coursesList = new WP_Query( $args );
 
-                                <li class="item">
-                                    <a href="" class="item-link">Барбер</a>
-                                    <span class="item-data">10.12 - 15.12</span>
-                                </li>
-                            </ul>
-                        </div>
+                                    if ($coursesList -> have_posts()) {
+                                        while($coursesList -> have_posts()) {
+                                            $coursesList -> the_post();
 
-                        <div class="item separator">
-                            <div class="accordion__outer-list">
-                                <h3 class="item__title">Парикмахерское искусство</h3>
-                                <button class="btn btn-circle btn-accordion"><span class="btn-line"></span><span class="btn-line btn-line--vertical"></span></button>
-                            </div>
+                                            
+                                            $course = get_field('course-info');
+                                            $title = $course['course-title'];
+                                            $duration = $course['course-duration'];
+                                            $link = get_permalink();
 
-                            <ul class="accordion__inner-list visually-hidden">
-                                <li class="item">
-                                    <a href="" class="item-link">Парикмахер стрижки</a>
-                                    <span class="item-data">14.11 - 15.11</span>
-                                </li>
+                                            
+                                            ?>
 
-                                <li class="item">
-                                    <a href="" class="item-link">Парикмахер модельер</a>
-                                    <span class="item-data">20.11 - 26.11</span>
-                                </li>
+                                            <li class="item">
+                                                <a href="<?php echo $link;  ?>" class="item-link"><?php echo $title; ?></a>
+                                                <span class="item-data"><?php?><?php echo $duration;  ?></span>
+                                            </li>
 
-                                <li class="item">
-                                    <a href="" class="item-link">Барбер</a>
-                                    <span class="item-data">10.12 - 15.12</span>
-                                </li>
-                            </ul>
-                        </div>
+                                        <?php } ?>
+                                    </ul>
+                                </div>
+                            <?php
 
-                        <div class="item separator">
-                            <div class="accordion__outer-list">
-                                <h3 class="item__title">Парикмахерское искусство</h3>
-                                <button class="btn btn-circle btn-accordion"><span class="btn-line"></span><span class="btn-line btn-line--vertical"></span></button>
-                            </div>
-
-
-                            <ul class="accordion__inner-list visually-hidden">
-                                <li class="item">
-                                    <a href="" class="item-link">Парикмахер стрижки</a>
-                                    <span class="item-data">14.11 - 15.11</span>
-                                </li>
-
-                                <li class="item">
-                                    <a href="" class="item-link">Парикмахер модельер</a>
-                                    <span class="item-data">20.11 - 26.11</span>
-                                </li>
-
-                                <li class="item">
-                                    <a href="" class="item-link">Барбер</a>
-                                    <span class="item-data">10.12 - 15.12</span>
-                                </li>
-                            </ul>
-                        </div>
-
-                        <div class="item separator">
-                            <div class="accordion__outer-list">
-                                <h3 class="item__title">Парикмахерское искусство</h3>
-                                <button class="btn btn-circle btn-accordion"><span class="btn-line"></span><span class="btn-line btn-line--vertical"></span></button>
-                            </div>
-
-                            <ul class="accordion__inner-list visually-hidden">
-                                <li class="item">
-                                    <a href="" class="item-link">Парикмахер стрижки</a>
-                                    <span class="item-data">14.11 - 15.11</span>
-                                </li>
-
-                                <li class="item">
-                                    <a href="" class="item-link">Парикмахер модельер</a>
-                                    <span class="item-data">20.11 - 26.11</span>
-                                </li>
-
-                                <li class="item">
-                                    <a href="" class="item-link">Барбер</a>
-                                    <span class="item-data">10.12 - 15.12</span>
-                                </li>
-                            </ul>
-                        </div>
-
-                        <div class="item separator">
-                            <div class="accordion__outer-list">
-                                <h3 class="item__title">Парикмахерское искусство</h3>
-                                <button class="btn btn-circle btn-accordion"><span class="btn-line"></span><span class="btn-line btn-line--vertical"></span></button>
-                            </div>
-
-                            <ul class="accordion__inner-list visually-hidden">
-                                <li class="item">
-                                    <a href="" class="item-link">Парикмахер стрижки</a>
-                                    <span class="item-data">14.11 - 15.11</span>
-                                </li>
-
-                                <li class="item">
-                                    <a href="" class="item-link">Парикмахер модельер</a>
-                                    <span class="item-data">20.11 - 26.11</span>
-                                </li>
-
-                                <li class="item">
-                                    <a href="" class="item-link">Барбер</a>
-                                    <span class="item-data">10.12 - 15.12</span>
-                                </li>
-                            </ul>
-                        </div>
-
-                        <div class="item separator">
-                            <div class="accordion__outer-list">
-                                <h3 class="item__title">Парикмахерское искусство</h3>
-                                <button class="btn btn-circle btn-accordion"><span class="btn-line"></span><span class="btn-line btn-line--vertical"></span></button>
-                            </div>
+                                } else {
+                                    wp_reset_postdata();
+                                }
+                            ?>
 
 
-                            <ul class="accordion__inner-list visually-hidden">
-                                <li class="item">
-                                    <a href="" class="item-link">Парикмахер стрижки</a>
-                                    <span class="item-data">14.11 - 15.11</span>
-                                </li>
+                        <?php } ?>
 
-                                <li class="item">
-                                    <a href="" class="item-link">Парикмахер модельер</a>
-                                    <span class="item-data">20.11 - 26.11</span>
-                                </li>
-
-                                <li class="item">
-                                    <a href="" class="item-link">Барбер</a>
-                                    <span class="item-data">10.12 - 15.12</span>
-                                </li>
-                            </ul>
-                        </div>
                     </div>
                 </div>
             </div>

@@ -8,9 +8,9 @@ import Swiper from 'swiper';
  * @param outerSettings {Object}
  */
 class Slider {
-    constructor(htmlElement, outerSettings, ) {
+    constructor(htmlElement, outerSettings) {
         this._root = htmlElement;
-        this._container = null;
+        // this._container = null;
         this._slider = null;
 
         this._outerSettings = outerSettings || {};
@@ -46,13 +46,13 @@ class Slider {
      * @method _setContainer
      * @returns {Slider}
      */
-    _setContainer() {
-        if (this._root) {
-            this._container = this._root.querySelector(".swiper-container");
-        }
+    // _setContainer() {
+    //     if (this._root) {
+    //         this._container = this._root.querySelector(".swiper-container");
+    //     }
 
-        return this;
-    }
+    //     return this;
+    // }
 
     /**
      * @private
@@ -69,7 +69,7 @@ class Slider {
      * @returns {Slider}
      */
     _init() {
-        this._slider = new Swiper(this._container, this._getSettings());
+        this._slider = new Swiper(this._root, this._getSettings());
 
         return this;
     }
@@ -81,7 +81,7 @@ class Slider {
      */
     run() {
         this
-            ._setContainer()
+            // ._setContainer()
             ._init();
     }
 }

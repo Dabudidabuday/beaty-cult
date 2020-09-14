@@ -1,10 +1,10 @@
 import Slider from '@components/slider.js';
 
 class Atmo {
-    constructor(htmlElement, sliderElement) {
+    constructor(htmlElement) {
         this._root = htmlElement;
         this._slider = null;
-        this._sliderElement = sliderElement || htmlElement;
+        this._sliderElement = this._root.querySelector('.swiper-container');
 
         this._swiperSettings = {
           breakpoints: {
@@ -23,7 +23,7 @@ class Atmo {
           },
           flipEffect: {
             rotate: 30,
-            slideShadows: false,
+            slideShadows: true,
           },
         };
     }
@@ -47,7 +47,6 @@ class Atmo {
      */
     run() {
         this._initSlider();
-            console.log("slider button: ",this._swiperSettings.navigation.nextEl);
     }
 }
 
