@@ -7,7 +7,7 @@
     <title>Beauty cult</title>
     <?php wp_head(); ?>
 </head>
-<body class="main-page">
+<body class="main-page" data-barba="wrapper">
 <header class="header">
     <div class="flex-container jc-space-between">
         <div class="header-logo">

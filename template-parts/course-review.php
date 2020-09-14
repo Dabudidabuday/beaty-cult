@@ -56,6 +56,8 @@
                         </div>
                     <?php } ?>
                 <?php } ?>
+
+                <?php wp_reset_query(); ?>
             </div>
             <div class="slider-nav-prev">
                 <span class="slider-arrow">

@@ -9,7 +9,7 @@
     <?php wp_head(); ?>
     <title><?php echo the_title() ?> | BEAUTY CULT</title>
 </head>
-<body class="course-page">
+<body class="course-page" data-barba="wrapper">
 
 <nav class="navigation visually-hidden">
     <div class="navigation-container">

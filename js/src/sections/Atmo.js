@@ -4,7 +4,7 @@ class Atmo {
     constructor(htmlElement) {
         this._root = htmlElement;
         this._slider = null;
-        this._sliderElement = this._root.querySelector('.swiper-container');
+        this._sliderElement = `${this._root} .swiper-container`;
 
         this._swiperSettings = {
           breakpoints: {
@@ -18,8 +18,8 @@ class Atmo {
           },
           navigation: {
             clickable: true,
-            nextEl: ".slider-nav-next",
-            prevEl: ".slider-nav-prev",
+            nextEl: `${this._root} .slider-nav-next`,
+            prevEl: `${this._root} .slider-nav-prev`,
           },
           flipEffect: {
             rotate: 30,

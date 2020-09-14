@@ -1,7 +1,8 @@
 'use strict';
 
 // // typical import
-// import gsap from "gsap";
+import gsap from "gsap";
+
  
 // // or get other plugins:
 // import Draggable from "gsap/Draggable";
@@ -15,18 +16,21 @@
 // console.log('gsap library', gsap);
 
 import './scripts/accordion.js';
+import './scripts/page-transition.js';
+import './scripts/image-transition.js';
 
 import '../../css/src/app.scss';
 
 import Teachers from "./sections/Teachers";
 import Atmo from "./sections/Atmo";
 import Review from "./sections/Review";
+import { Timeline } from "gsap/gsap-core";
 
 
 
 class App {
     constructor() {
-        this.atmo = new Atmo(document.querySelector(".section.atmo"));
+        this.atmo = new Atmo(".section.atmo");
         this.teachers = new Teachers(document.querySelector('.section.teachers'));
         this.review = new Review(document.querySelector('.section.review'));
     }
@@ -82,37 +86,4 @@ coursePageNavMenu();
 
 
 
-
-
-
-
-
-
-
-let image = document.querySelector(".courses__card .course-image");
-console.log('image for transition', image);
-
-const config = {
-  attributes: true
-}; 
-
-// Функция обратного вызова при срабатывании мутации
-const callback = function(mutationsList, observer) {
-    for (let mutation of mutationsList) {
-        if (mutation.type === 'attributes') {
-            console.log('The ' + mutation.attributeName + ' attribute was modified.');
-            // gsap.from(image, { duration: 3, x: 300, opacity: 0, scale: 0.5 });
-        }
-    }
-};
-
-// Создаем экземпляр наблюдателя с указанной функцией обратного вызова
-const observer = new MutationObserver(callback);
-
-// Начинаем наблюдение за настроенными изменениями целевого элемента
-observer.observe(image, config);
-
-
-// Позже можно остановить наблюдение
-// observer.disconnect();
 
