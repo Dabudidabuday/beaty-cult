@@ -15,7 +15,7 @@
                         if( count($teachersList) ): 
                             foreach($teachersList as $item): 
 
-                                $image = $item['thumbnail_image_url'];
+                                $image = $item['full_image_url'];
                             ?>
                                 <div class="swiper-slide">
                                     <img src="<?php echo $image ?>" alt="">

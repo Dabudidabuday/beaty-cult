@@ -1,10 +1,11 @@
 // import barba from "@barba/core";
+// import regeneratorRuntime from "regenerator-runtime";
+// import gsap from "gsap";
+// // function pageTransition() {
+// //     var tl = gsap.timeline();
 
-// function pageTransition() {
-//     var tl = gsap.timeline();
-
-//     // tl.to('')
-// }
+// //     // tl.to('')
+// // }
 
 // function delay(n) {
 //     n = n || 2000;
@@ -15,15 +16,51 @@
 //     });
 // };
 
-// barba.init({
-//   sync: true,
-//   transitions: [{
-//       async leave(data) {
-//         const done = this.async();
 
-//         pageTransition();
-//         await delay(1500);
-//         done();
-//       }
-//   }]
-// });
+
+// function pageTransition() {
+//     var tl = gsap.timeline();
+
+//     tl.to('.loading-screen', {
+//         duration: 1.2,
+//         width: '100%',
+//         left: '0%',
+//         ease: 'Expo.easeInOut'
+//     })
+
+//     tl.to('.loading-screen', {
+//         duration: 1,
+//         width: '100%',
+//         left: '100%',
+//         ease: 'Expo.easeInOut',
+//         delay: 0.3
+//     })
+//     tl.set('.loading-screen', { left: '-100%'});
+// }
+
+// function contentAnimation() {
+//     var tl = gsap.timeline();
+//     tl.from('.animate', { duration: 1, y: 30, opacity: 0, stagger: 0.4, delay: 0.2 })
+// }
+
+
+// (function() {
+//     barba.init({
+//     sync: true,
+//     transitions: [
+//         {
+//         async leave(data) {
+//             const done = this.async();
+
+//             pageTransition();
+//             await delay(1000);
+//             done();
+//         },
+
+//         async enter(data) {
+//             contentAnimation();
+//         },
+//         },
+//     ],
+//     });
+// }())

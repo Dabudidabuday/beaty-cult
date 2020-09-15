@@ -14,10 +14,10 @@ if($students) :?>
                     if( count($images) ):
                         
                         foreach($images as $image):
-                            $thumbnail_image_url= $image['thumbnail_image_url']; ?>
+                            $full_image_url= $image['full_image_url']; ?>
 
                             <div class="swiper-slide">
-                                <img src="<?php echo $thumbnail_image_url;  ?>" alt="">
+                                <img src="<?php echo $full_image_url;  ?>" alt="">
                             </div>
                         <?php endforeach; ?>
                     <?php endif;  ?>

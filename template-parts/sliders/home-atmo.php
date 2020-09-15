@@ -3,17 +3,24 @@
         <h3 class="h1 atmo-title">Наша атмосфера</h3>
         <div class="swiper-container atmo-slider">
             <div class="swiper-wrapper">
-                <div class="swiper-slide">
-                    <img src="<?php echo get_template_directory_uri() . '/public/assets/images/atmo-slider/1.jpg'; ?>" alt="">
-                </div>
+                <?php
+                if(have_posts()) :
+                    while(have_posts()) : the_post();
+                        $atmoList = acf_photo_gallery('atmo-list', $post->ID);
 
-                <div class="swiper-slide">
-                    <img src="<?php echo get_template_directory_uri() . '/public/assets/images/atmo-slider/2.jpg'; ?>" alt="">
-                </div>
+                    
+                        if( count($atmoList) ): 
+                            foreach($atmoList as $item): 
 
-                <div class="swiper-slide">
-                    <img src="https://upload.wikimedia.org/wikipedia/commons/a/a4/%D0%97%D0%B0%D0%BA%D0%B0%D1%82_%D0%9F%D0%B0%D0%B0%D0%BD%D0%B0%D1%8F%D1%80%D0%B2%D0%B8.jpg" alt="">
-                </div>
+                                $image = $item['full_image_url'];
+                            ?>
+                                <div class="swiper-slide">
+                                    <img src="<?php echo $image ?>" alt="">
+                                </div>
+                            <?php endforeach; ?>
+                        <?php endif; ?>
+                    <?php endwhile; ?>
+               <?php endif; ?>
             </div>
             <div class="slider-nav-prev">
                 <span class="slider-arrow">

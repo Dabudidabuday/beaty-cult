@@ -1,7 +1,7 @@
 .footer {
   position: relative;
   height: 100vh;
-  background-image: url('~@images/backgrounds/map.png');
+  // background-image: url('~@images/backgrounds/map.png');
 
   .footer-title {
     margin-bottom: 1.25rem;
@@ -88,4 +88,8 @@
       }
     }
   }
+}
+
+#contacts_widget-5 {
+  height: 0;
 }

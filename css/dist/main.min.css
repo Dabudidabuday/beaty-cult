@@ -800,6 +800,25 @@ input:-webkit-autofill:active {
   .wpcf7-not-valid-tip {
     top: 31px; } }
 
+.loading-screen {
+  position: relative;
+  padding-left: 0;
+  padding-right: 0;
+  padding-top: 0;
+  background-color: #A8CEC2;
+  width: 0;
+  height: 100%; }
+
+.load-container {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100vh;
+  overflow: hidden;
+  z-index: 10;
+  pointer-events: none; }
+
 /*
 *   Sections
 */
@@ -1116,8 +1135,7 @@ input:-webkit-autofill:active {
 
 .footer {
   position: relative;
-  height: 100vh;
-  background-image: url(//localhost:9000/beauty-cult-wordpress/wp-content/themes/beauty-cult/images/map.png); }
+  height: 100vh; }
   .footer .footer-title {
     margin-bottom: 1.25rem; }
 
@@ -1171,6 +1189,9 @@ input:-webkit-autofill:active {
     max-width: 45%; }
     .footer__contacts .contacts-item a {
       display: inline; } }
+
+#contacts_widget-5 {
+  height: 0; }
 
 .course-promo {
   margin: 0 auto;

@@ -2,18 +2,11 @@
 
 // // typical import
 import gsap from "gsap";
-
- 
-// // or get other plugins:
-// import Draggable from "gsap/Draggable";
-// import ScrollTrigger from "gsap/ScrollTrigger";
- 
-// or all tools are exported from the "all" file (excluding bonus plugins):
-// import { gsap, ScrollTrigger, Draggable, MotionPathPlugin } from "gsap/all";
+import { Timeline } from "gsap/gsap-core";
+import ScrollTrigger from "gsap/ScrollTrigger";
 
 // import './vendors/blotter.min.js';
 
-// console.log('gsap library', gsap);
 
 import './scripts/accordion.js';
 import './scripts/page-transition.js';
@@ -24,7 +17,7 @@ import '../../css/src/app.scss';
 import Teachers from "./sections/Teachers";
 import Atmo from "./sections/Atmo";
 import Review from "./sections/Review";
-import { Timeline } from "gsap/gsap-core";
+
 
 
 

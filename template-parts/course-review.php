@@ -9,8 +9,7 @@
                     'post_type' => 'reviews-list',
                     'posts_per_page' => -1,
                 );
-
-                var_dump(the_title());
+                
                 $coursesList = new WP_Query( $args );
 
                 if ($coursesList -> have_posts()) {

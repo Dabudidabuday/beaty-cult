@@ -1,14 +1,18 @@
-// // typical import
-// import gsap from "gsap";
+
 import { gsap } from "gsap";
-// // or get other plugins:
-// import Draggable from "gsap/Draggable";
-// import ScrollTrigger from "gsap/ScrollTrigger";
 
 
-let headerAnimation = function() {
+// let headerNavAnimation = function() {
+//     const navContainer = document.querySelector(".navigation");
+//     const navItems = document.querySelectorAll(".navigation-list > .item");
+//     const tl = gsap.timeline();
+//     console.log("navContainer: ", navContainer);
+//     console.log("navItems: ", navItems);
 
-}
+//     tl.from(navContainer, { left: '-100%', ease: "expo.out", duration: 0.7 });
+//     tl.from(navItems,{ y: 100, stagger: 0.1, opacity: 0, duration: 0.2, ease: "expo.out" },"-=0.15");
+// }
+// headerNavAnimation();
 
 let heroAnimation = function() {
     const logo = document.querySelector(".header-logo");
