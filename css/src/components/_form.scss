@@ -4,6 +4,18 @@
   align-items: flex-start;
 }
 
+.wpcf7-form {
+  p {
+    text-align: left;
+  }
+
+  .input-radio {
+    .first {
+      margin-left: 0;
+    }
+  }
+}
+
 .input-label {
   margin-bottom: 2px;
   display: block;
@@ -31,6 +43,7 @@
     outline: none;
   }
 }
+
 
 
 

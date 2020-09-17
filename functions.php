@@ -14,7 +14,6 @@ function register_my_widgets() {
 
 add_action( 'widgets_init', 'register_my_widgets' );
 
-
 /*
 *    Register scripts and styles
 */
@@ -31,15 +30,14 @@ wp_enqueue_script( 'site_main_js', $jsFileURI , null , null , true );
 function theme_scripts() {
 
     if(is_front_page()){
-        wp_enqueue_script('header-styles', get_template_directory_uri() . '/js/src/scripts/header-styles.js', array(), null, true);
-        // wp_enqueue_script('accordion-script', get_template_directory_uri() . '/js/src/scripts/accordion.js', array(), null, true);
 		wp_enqueue_script('get-set-course-info', get_template_directory_uri() .'/js/src/scripts/get-set-course-info.js', array(), null, true);
 		wp_enqueue_script('promo-flashlight', get_template_directory_uri() .'/js/src/scripts/promo-flashlight.js', array(), null, true);
-		// wp_enqueue_script('image-transition', get_template_directory_uri() .'/js/src/scripts/image-transition.js', array(), null, true);
     }
 }
 
 add_action('wp_enqueue_scripts', 'theme_scripts');
+
+
 
 
 /**
@@ -195,6 +193,3 @@ function register_contacts_widget() {
     register_widget( 'Contacts_Widget' );
 }
 add_action( 'widgets_init', 'register_contacts_widget' );
-
-
-add_filter( 'jpeg_quality', create_function( '', 'return 100;' ) );

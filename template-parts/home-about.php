@@ -102,7 +102,8 @@
             </ul>
 
             <div class="about-background">
-                <img src="<?php echo get_template_directory_uri() . '/public/assets/images/backgrounds/about-background.jpg'; ?>" alt="">
+                <img class="image-girl" src="<?php echo get_template_directory_uri() . '/public/assets/images/backgrounds/about-background.jpg'; ?>" alt="">
+                <img class="image-fish" src="<?php echo get_template_directory_uri() . '/public/assets/images/backgrounds/fish.jpg'; ?>" alt="">
             </div>
         </div>
     </div>

@@ -23,7 +23,7 @@
                             <button class="btn btn-circle btn-accordion"><span class="btn-line"></span><span class="btn-line btn-line--vertical"></span></button>
                         </div>
 
-                        <ul class="accordion__inner-list visually-hidden">
+                        <ul class="accordion__inner-list">
 
                         <?php
                             $args = array(
@@ -180,7 +180,7 @@
                     </div>
 
                     <a href="" class="btn btn-primary mr-05 course-link">Подробиці курсу</a>
-                    <a class="btn btn-outline">Отримати консультацію</a>
+                    <a href="#sectionFeedback" class="btn btn-outline">Отримати консультацію</a>
                 </div>
             </div>
         </div>

@@ -6,12 +6,11 @@ if (have_posts()) {
     while (have_posts()) {
     the_post(); ?>
 
-<main data-barba="container" data-barba-namespace="course">
+
 
     <?php get_template_part('template-parts/course', 'hero') ?>
 
     <?php get_template_part('template-parts/course', 'promo') ?>
-
 
     <?php get_template_part('template-parts/course', 'stages') ?>
 
@@ -25,12 +24,16 @@ if (have_posts()) {
 
     <?php get_template_part('template-parts/course', 'review'); ?>
 
-</main>
+
 
 <?php
     }
 } ?>
 
-<?php get_template_part('/template-parts/feedback'); ?>
+<?php get_template_part('/template-parts/course', 'feedback'); ?>
+
+
 
 <?php get_footer(); ?>
+
+</main>

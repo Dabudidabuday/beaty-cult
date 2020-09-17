@@ -1,37 +1,4 @@
-
-
-// function hideAllExcept (itemIndex) {
-//     accordionItems.forEach((item, index) => {
-//         if (itemIndex === index) return
-
-//         const outerList = item.querySelector(".accordion__outer-list");
-//         const innerList = item.querySelector(".accordion__inner-list");
-//         const title = item.querySelector(".item__title");
-//         const btn = item.querySelector(".btn-accordion");
-
-//         outerList.classList.remove("active")
-//         title.classList.remove("active");
-//         innerList.classList.add("visually-hidden");
-//         btn.classList.remove("active");
-//     });
-// }
-
-// accordionItems.forEach( (item, index)  => {
-//     const outerList = item.querySelector('.accordion__outer-list');
-//     const innerList = item.querySelector(".accordion__inner-list");
-//     const title = item.querySelector(".item__title");
-//     const btn = item.querySelector(".btn-accordion");
-
-//     outerList.addEventListener('click', function() {
-//         hideAllExcept(index);
-
-//         title.classList.toggle('active');
-//         innerList.classList.toggle('visually-hidden');
-//         btn.classList.toggle('active');
-//     });
-
-// });
-
+import gsap from "gsap";
 
 const accordionItems = Array.from(
   document.querySelectorAll(".accordion .accordion-item")
@@ -43,17 +10,18 @@ document.addEventListener("DOMContentLoaded", function () {
      const title = firstItem.querySelector(".item__title");
      const btn = firstItem.querySelector(".btn-accordion");
 
+     var tl = gsap.timeline();
+
+      // tl.set(innerList, {});
+
     title.classList.toggle("active");
-    innerList.classList.toggle("visually-hidden");
+    innerList.classList.add("active");
     btn.classList.toggle("active");
 });
 
 
 
 const headerAccordionItems = Array.from(document.querySelectorAll(".header .header-accordion-item"));
-
-
-
 
 const accordionLogic = function(array) {
   function hideAllExcept(itemIndex) {
@@ -67,7 +35,7 @@ const accordionLogic = function(array) {
 
       outerList.classList.remove("active");
       title.classList.remove("active");
-      innerList.classList.add("visually-hidden");
+      innerList.classList.remove("active");
       btn.classList.remove("active");
     });
   }
@@ -81,8 +49,9 @@ const accordionLogic = function(array) {
     outerList.addEventListener("click", function () {
       hideAllExcept(index);
 
+
       title.classList.toggle("active");
-      innerList.classList.toggle("visually-hidden");
+      innerList.classList.toggle("active");
       btn.classList.toggle("active");
     });
   });

@@ -3,11 +3,22 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css">
     <title>Beauty cult</title>
     <?php wp_head(); ?>
 </head>
-<body class="main-page" data-barba="wrapper">
+<body class="main-page home-page" data-barba="wrapper">
+    <!-- <div id="barba-wrapper"> -->
+
+<ul class="transition">
+    <li></li>
+    <li></li>
+    <li></li>
+    <li></li>
+    <li></li>
+</ul>
+
+<main data-barba="container" data-barba-namespace="home">
+
 <header class="header">
     <div class="flex-container jc-space-between">
         <div class="header-logo">
@@ -63,7 +74,7 @@
                                     <h3 class="item__title"><?php echo $term->name; ?></h3>
                                     <button class="btn btn-circle btn-accordion"><span class="btn-line"></span><span class="btn-line btn-line--vertical"></span></button>
                                 </div>
-                                <ul class="accordion__inner-list visually-hidden">
+                                <ul class="accordion__inner-list">
 
                                     <?php
                                     $args = array(

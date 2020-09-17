@@ -1,10 +1,8 @@
 <?php get_header(); ?>
 
-<main data-barba="container" data-barba-namespace="home">
 
-<div class="loading-container">
-    <div class="loading-screen"></div>
-</div>
+
+
         
     <?php get_template_part('template-parts/home', 'hero') ?>
 
@@ -18,9 +16,7 @@
 
     <?php get_template_part('template-parts/sliders/home', 'teachers'); ?>
 
-    <?php get_template_part('/template-parts/feedback'); ?>
-
-</main>
+    <?php get_template_part('/template-parts/home', 'feedback'); ?>
 
 <?php get_footer(); ?>
 

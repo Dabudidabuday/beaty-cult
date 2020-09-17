@@ -2,14 +2,23 @@
 <html lang="uk">
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport"
-          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-        <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css">
-    <?php wp_head(); ?>
     <title><?php echo the_title() ?> | BEAUTY CULT</title>
+    <?php wp_head(); ?>
 </head>
 <body class="course-page" data-barba="wrapper">
+<!-- <div id="barba-wrapper"> -->
+
+<ul class="transition">
+    <li></li>
+    <li></li>
+    <li></li>
+    <li></li>
+    <li></li>
+</ul>
+
+<main data-barba="container" data-barba-namespace="course">
 
 <nav class="navigation visually-hidden">
     <div class="navigation-container">
@@ -119,7 +128,7 @@
                                     <h3 class="item__title"><?php echo $term->name; ?></h3>
                                     <button class="btn btn-circle btn-accordion"><span class="btn-line"></span><span class="btn-line btn-line--vertical"></span></button>
                                 </div>
-                                <ul class="accordion__inner-list visually-hidden">
+                                <ul class="accordion__inner-list">
 
                                     <?php
                                     $args = array(

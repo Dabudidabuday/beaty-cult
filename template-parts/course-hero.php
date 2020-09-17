@@ -10,7 +10,7 @@ $image = $course['course-image'];
 
 <section class="section hero-course">
     <div class="container hero-course-container">
-        <div class="courses-img">
+        <div class="courses-img animate">
             <picture>
                 <img src="<?php echo $image ?>" alt="">
             </picture>
@@ -18,15 +18,15 @@ $image = $course['course-image'];
 
         <div class="courses__card">
 
-            <h1 class="h1 card-title course-title"><?php echo the_title(); ?></h1>
+            <h1 class="h1 card-title course-title animate"><?php echo the_title(); ?></h1>
 
             <div class="card__description">
-                <p class="card-text course-description">
+                <p class="card-text course-description animate">
                     <?php echo $description; ?>
                 </p>
 
                 <div class="card__info">
-                    <div class="card__info-bullet">
+                    <div class="card__info-bullet animate">
                         <div class="bullet-icon">
                             <svg width="34" height="34" viewBox="0 0 34 34" fill="none" xmlns="http://www.w3.org/2000/svg">
                                 <path d="M29.0209 4.97914C25.81 1.76827 21.5409 0 17 0C12.4591 0 8.19002 1.76827 4.97914 4.97914C1.76833 8.19002 0 12.4591 0 17C0 21.5409 1.76833 25.81 4.97914 29.0209C8.19002 32.2317 12.4591 34 17 34C21.5409 34 25.81 32.2317 29.0209 29.0209C32.2317 25.81 34 21.5409 34 17C34 12.4591 32.2317 8.19002 29.0209 4.97914ZM17 32.0078C8.72465 32.0078 1.99219 25.2753 1.99219 17C1.99219 8.72465 8.72465 1.99219 17 1.99219C25.2753 1.99219 32.0078 8.72465 32.0078 17C32.0078 25.2753 25.2753 32.0078 17 32.0078Z" fill="#A8CEC2"/>
@@ -38,7 +38,7 @@ $image = $course['course-image'];
                         </p>
                     </div>
 
-                    <div class="card__info-bullet">
+                    <div class="card__info-bullet animate">
                         <div class="bullet-icon">
                             <svg width="34" height="34" viewBox="0 0 34 34" fill="none" xmlns="http://www.w3.org/2000/svg">
                                 <g clip-path="url(#clip0)">
@@ -66,7 +66,7 @@ $image = $course['course-image'];
                         </p>
                     </div>
 
-                    <div class="card__info-bullet">
+                    <div class="card__info-bullet animate">
                         <div class="bullet-icon">
                             <svg width="34" height="34" viewBox="0 0 34 34" fill="none" xmlns="http://www.w3.org/2000/svg">
                                 <path d="M17 0C7.62637 0 0 7.62637 0 17C0 26.3736 7.62637 34 17 34C26.3736 34 34 26.3736 34 17C34 7.62637 26.3736 0 17 0ZM17 31.875C8.79778 31.875 2.12501 25.2022 2.12501 17C2.12501 8.79778 8.79778 2.12501 17 2.12501C25.2022 2.12501 31.875 8.79778 31.875 17C31.875 25.2022 25.2022 31.875 17 31.875Z" fill="#A8CEC2"/>
@@ -80,8 +80,8 @@ $image = $course['course-image'];
                 </div>
 
                 <div class="btn-group">
-                    <a href="" class="btn btn-primary">Записаться</a>
-                    <a class="btn btn-outline">Стать моделью</a>
+                    <a href="" class="btn btn-primary animate">Записатися</a>
+                    <a href="#sectionFeedback" class="btn btn-outline animate" id="btnModel">Стати моделлю</a>
                 </div>
             </div>
         </div>

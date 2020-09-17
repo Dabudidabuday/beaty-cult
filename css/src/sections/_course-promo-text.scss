@@ -2,25 +2,60 @@
 .course-promo {
   margin: 0 auto;
   display: block;
+  background-color: #FDFFFF;
+  
+  .promo-title {
+    padding-top: 5rem;
+    margin-bottom: 1.5rem;
+    text-align: center;
+    font-family: "Lora-Bold", serif;
+    font-size: 2rem;
+    line-height: 50px;
+    font-weight: bold;
+    color: #53635E ;
+    text-transform: uppercase;
+  }
+
 
   .promo-text {
-    margin: 0 auto;
-    display: block;
+    margin: 0 auto 5rem;
     text-align: center;
-    padding: 56px 0;
+    text-transform: uppercase;
+    color: #53635E;
+    font-family: 'Lora-Regular';
+    line-height: 37px;
+  }
 
-    @media screen and (min-width: $smallScreen) {
-      padding: 124px 0;
+  @media screen and (min-width: $smallScreen) {
+      .promo-title {
+        padding-top: 124px;
+      }
+
+      .promo-text {
+        margin-bottom: 124px;
+      }
     }
 
     @media screen and (min-width: $mediumScreen) {
-      padding: 94px 0;
-      max-width: 40%;
+      max-width: 80%;
+
+      .promo-title {
+        padding-top: 94px;
+      }
+
+      .promo-text {
+        margin-bottom: 94px;
+      }
 
     }
 
     @media screen and (min-width: $largeScreen) {
-      padding: 144px 0;
+      .promo-title {
+        padding-top: 144px;
+      }
+
+      .promo-text {
+        margin-bottom: 144px;
+      }
     }
-  }
 }
