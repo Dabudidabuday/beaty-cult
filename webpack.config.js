@@ -20,7 +20,7 @@ module.exports = env => {
        filename: "./js/dist/app.min.js",
        path: path.resolve(__dirname),
        publicPath: isProd
-         ? assetPath("beautycult.in.ua")
+         ? assetPath("beauty-cult.mirulin.com")
          : assetPath("localhost:9000/beauty-cult-wordpress"),
      },
      module: {
