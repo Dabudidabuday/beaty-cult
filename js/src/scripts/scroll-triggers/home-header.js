@@ -39,7 +39,7 @@ function setBackground(el, backgroundColor) {
     el.style.background = backgroundColor;
 }
 
-let mainPageHeader = document.querySelector(".main-page > .header");
+let mainPageHeader = document.querySelector(".home-page .header");
 
 if (mainPageHeader) {
   window.addEventListener("scroll", function () {
