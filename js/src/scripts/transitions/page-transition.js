@@ -76,6 +76,6 @@ function contentAnimation() {
 // });
 
 
-window.addEventListener('load', function() {
+window.addEventListener("DOMContentLoaded", function () {
   contentAnimation();
-})
+});

@@ -12,6 +12,8 @@ if (have_posts()) {
 
     <?php get_template_part('template-parts/course', 'promo') ?>
 
+    <?php get_template_part('template-parts/course', 'details') ?>
+
     <?php get_template_part('template-parts/course', 'stages') ?>
 
     <?php get_template_part('template-parts/sliders/course', 'teachers') ?>
@@ -31,7 +33,6 @@ if (have_posts()) {
 } ?>
 
 <?php get_template_part('/template-parts/course', 'feedback'); ?>
-
 
 
 <?php get_footer(); ?>

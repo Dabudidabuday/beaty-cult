@@ -2,10 +2,7 @@
 
 import "../../css/src/app.scss";
 
-import gsap from "gsap";
-// import { Timeline } from "gsap/gsap-core";
 
-// import './vendors/blotter.min.js';
 
 
 import "./scripts/transitions/home-transition.js";
@@ -16,6 +13,7 @@ import "./scripts/scroll-triggers/fish-girl.js";
 import './scripts/accordion.js';
 import './scripts/sliders.js';
 
+import gsap from "gsap";
 
 // Set feedback radio to "Model"
 let btnModel = document.querySelector("#btnModel");
