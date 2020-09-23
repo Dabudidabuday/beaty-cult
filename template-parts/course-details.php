@@ -7,7 +7,6 @@
             $program = get_field('course-program');
             $theory = $program['theory'];
             $practice = $program['practice'];
-
             ?>
 
       <div class="accordion">

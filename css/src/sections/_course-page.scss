@@ -31,10 +31,13 @@
 
   .courses-img {
     margin-bottom: 3.5rem;
+    
 
     img {
       width: 120%;
       transform: translateX(-10%);
+      height: 450px;
+      object-fit: cover;
     }
 
   }
@@ -44,6 +47,7 @@
 
     .card-title {
       margin-bottom: 1.5rem;
+      line-height: 1.8rem;
     }
 
     .card-text {

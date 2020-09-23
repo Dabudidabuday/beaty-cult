@@ -80,7 +80,7 @@ $image = $course['course-image'];
                 </div>
 
                 <div class="btn-group">
-                    <a href="" class="btn btn-primary animate">Записатися</a>
+                    <a href="#sectionFeedback" class="btn btn-primary animate">Записатися</a>
                     <a href="#sectionFeedback" class="btn btn-outline animate" id="btnModel">Стати моделлю</a>
                 </div>
             </div>

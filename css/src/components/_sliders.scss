@@ -91,7 +91,6 @@
     }
 
     @media screen and(min-width: $largeScreen) {
-
       .flickity-prev-next-button {
         top: -21px;
         width: 56px;
@@ -108,6 +107,8 @@
     }
 
     @media screen and(min-width: $extraLargeScreen) {
+      height: 360px;
+
       .flickity-prev-next-button {
         top: -11px;
 

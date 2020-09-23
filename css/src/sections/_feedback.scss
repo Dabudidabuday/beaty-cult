@@ -1,6 +1,8 @@
 .feedback {
   background-image: url('~@images/backgrounds/feedback-background.png');
   background-position: center left 33%;
+  background-repeat: no-repeat;
+  background-size: cover;
 }
 
 @media screen and(min-width: $mediumScreen) {

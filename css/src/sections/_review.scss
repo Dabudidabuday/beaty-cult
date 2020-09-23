@@ -60,5 +60,9 @@
       }
     }
   }
+
+  @media screen and(min-width: $extraLargeScreen) {
+    height: 358px;
+  }
 }
 

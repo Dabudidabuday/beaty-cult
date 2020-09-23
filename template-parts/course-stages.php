@@ -7,7 +7,7 @@
         $stage3 = get_sub_field('stage-3');
         ?>
 
-        <?php if($stage1) : ?>
+        <?php if($stage1['stage-image-1']) : ?>
             <section class="stages separator separator-top">
                 <div class="stages-container">
                     <div class="stage-img">
@@ -26,7 +26,7 @@
             </section>
         <?php endif; ?>
 
-        <?php if($stage2) : ?>
+        <?php if($stage2['stage-image-2']) : ?>
             <section class="stages separator separator-top">
                 <div class="stages-container stages-container--reverse">
                     <div class="stage-img">

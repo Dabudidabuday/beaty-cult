@@ -6,6 +6,10 @@
         .item {
             .accordion__outer-list {
                 flex-direction: row;
+
+                .item__title {
+                    font-size: 1.3rem;
+                }
             }
 
             .accordion__inner-list {
@@ -20,6 +24,10 @@
 
                 em {
                     font-style: italic;
+                }
+
+                strong {
+                    font-weight: bold;
                 }
 
                 h2,
